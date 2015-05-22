@@ -3,7 +3,7 @@
 $page="Homepage";
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
-<body>Test text
+<body>
 <header id="top" data-scroll-index="0">
   <div class="header-inner clearfix">
     <a href="/cadeui/" class="logo" title="Home"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
