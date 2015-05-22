@@ -17,4 +17,10 @@ else if($page==="Homepage")
 <script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
 <?php
 }
+else
+{
+?>
+<script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
+<?php
+}
 ?>
