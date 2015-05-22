@@ -1,0 +1,806 @@
+body
+{
+  margin:0 auto;
+  background: #FFF;
+  max-width:2000px;
+}
+h1
+{
+  text-transform:uppercase;
+  font-size:1.8rem;
+}
+.header-inner, .features-inner, .gs-inner, .footer-inner, .testimonials-inner
+{
+  max-width:1000px;
+  padding:0 1rem;
+  margin:0 auto;
+}
+header
+{
+  background:#153853;
+  position:relative;
+}
+header .logo
+{
+  float:left;
+}
+header .register, header .login
+{
+  float:right;
+  color:#FFF;
+  font-size:1rem;
+  border-left:1px solid #CCC;
+  border-right:1px solid #CCC;
+  padding:1.5rem;
+  text-decoration:none;
+}
+header .login
+{
+  border-right:0;
+}
+header .register:hover, header .login:hover
+{
+  color:#000;
+  background: #ff8f17;
+  transition:0.3s all ease-in-out;
+}
+header .top-nav
+{
+  background: #29AAE1;
+  left:0;
+  right:0;
+  z-index:999;
+  margin:auto;
+  position:relative;
+}
+header .top-nav::after
+{
+  content:"";
+  background: #FFF;
+  height:3px;
+  display:block;
+}
+header .top-nav ul
+{
+  display:table;
+  table-layout:fixed;
+  width:100%;
+  background:#29AAE1;
+  text-align:center;
+  margin:0 auto;
+  max-width:1000px;
+}
+header .top-nav ul li
+{
+  display:table-cell;
+  position:relative;
+}
+header .top-nav ul li a.active, header .top-nav ul li a:hover, header .top-nav ul li a:focus
+{
+  background: #3277ac;
+  opacity:0.7;
+  transition:0.6s all ease-in-out;
+}
+header .top-nav ul li::after
+{
+  margin:auto;
+  height:0;
+  width:0;
+  display:block;
+  content:"";
+  position: absolute;
+  right:0;
+  left:-2rem;
+  bottom:0;
+  opacity:0;
+  border: 5px solid transparent;
+  border-bottom-color: #FFF;
+  transition:0.4s opacity ease-in-out, 0.4s left ease-in-out;
+}
+header .top-nav ul li:hover::after
+{
+  left:0;
+  opacity:1;
+}
+header .top-nav ul li a
+{
+  display:block;
+  padding: 1rem 0;
+  position:relative;
+  z-index:1;
+  text-transform:uppercase;
+  cursor:pointer;
+  text-decoration: none;
+  color: #FFF;
+}
+header .hamburger
+{
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  display:none;
+}
+header .hamburger+label
+{
+  padding: 16px 1rem 10px 0.5rem;
+  cursor:pointer;
+  letter-spacing:-1px;
+  font-size:1.1rem;
+  display:none;
+  text-transform:uppercase;
+  color:#FFF;
+}
+header .hamburger+label span
+{
+  display:inline-block;
+  width:30px;
+  margin-right:6px;
+  vertical-align:middle;
+}
+header .hamburger+label span::before, header .hamburger+label span::after
+{
+  content:"";
+  height:4px;
+  transition:0.3s all ease-in-out;
+  display:block;
+  background:#FFF;
+  margin:8px 0;
+}
+header .hamburger+label span::before
+{
+  margin-top:0;
+}
+header .hamburger+label::after
+{
+  content:"Menu";
+}
+@media only screen and (max-width:550px)
+{
+  header .top-nav ul
+  {
+    position:absolute;
+    transition:0.3s all ease-in-out;
+    left:-999rem;
+    top:100%;
+    display:block;
+  }
+  header .top-nav ul li
+  {
+    display:block;
+    border-bottom:1px solid #153853;
+  }
+  header .top-nav ul li::after
+  {
+    left:0;
+  }
+  header .hamburger+label
+  {
+    display:inline-block;
+  }
+  header .hamburger:checked+label span::before
+  {
+    transform: rotate(225deg);
+    margin-top:8px;
+    height:3px;
+  }
+  header .hamburger:checked+label span::after
+  {
+    transform: rotate(-225deg);
+    margin-top:-10px;
+    height:3px;
+    margin-bottom:10px;
+  }
+  header .hamburger:checked~ul
+  {
+    left:0;
+  }
+}
+.banner-why
+{
+  background: #e8e8e8 url(/cadeui/system/images/banner-faded.jpg) no-repeat;
+  background-size:cover;
+  padding:3rem 0;
+  text-align:center;
+}
+.banner-why h1
+{
+  font-size:3rem;
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin:1rem auto;
+  max-width:1000px;
+}
+.banner-why h2
+{
+  font-size:1.5rem;
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin:1rem auto;
+  max-width:800px;
+}
+.banner-why .new-cade
+{
+  display: inline-block;
+  position:relative;
+  border-radius: 10px;
+  margin:1rem 0 0.4rem 0;
+  text-transform: uppercase;
+  box-shadow: 0px 3px rgba(128,128,128,1),0px 4px rgba(118,118,118,1),0px 5px rgba(108,108,108,1),0px 6px rgba(98,98,98,1),0px 7px rgba(88,88,88,1),0px 8px rgba(78,78,78,1),0px 14px 6px -1px rgba(128,128,128,1);
+} 
+.banner-why .new-cade span
+{
+  background-color: #E8E8E8;
+  color:#FF9A22;
+  box-shadow:0px -1px #fff, 0px 1px 1px #FFFFFF;
+  border-radius: 10px;
+  transition:0.1s transform ease-in-out, 0.4s color ease-in-out;
+  display:inline-block;
+  padding:10px 40px;
+  text-shadow: 0px 1px #fff, 0px -1px #DE9B4B;
+}
+.banner-why .new-cade span:hover
+{
+  color: #D47708;
+  text-shadow: 0px -1px #B5701D;
+  cursor: pointer;
+}
+.banner-why .new-cade:active
+{
+  box-shadow:0px 3px rgba(128,128,128,1),0px 4px rgba(118,118,118,1),0px 5px rgba(108,108,108,1),0px 6px rgba(98,98,98,1),0px 7px rgba(88,88,88,1),0px 8px rgba(78,78,78,1),0px 10px 2px 0px rgba(128,128,128,.6);
+}
+.banner-why .new-cade:active span
+{
+  transform: translate(0, 5px);
+}
+.getting-started
+{
+  background-color:#eef1f2;
+  color:#454545;
+  padding-bottom:1rem;
+}
+.getting-started h1
+{
+  text-align:center;
+  padding:1rem 0;
+}
+.getting-started h2
+{
+  font-size:1.6rem;
+  padding:1rem 0;
+  text-align:center;
+}
+.getting-started ul
+{
+  list-style: circle;
+  padding-left:1rem;
+  margin:1rem 0 0 1rem;
+}
+.getting-started li
+{
+  margin:0.5rem 0 0;
+}
+.features-wrapper
+{
+  background: #FFF;
+  text-align:center;
+}
+.features-wrapper h1
+{
+  padding:1rem 0 0;
+}
+.features-wrapper h2
+{
+  font-size:1.5rem;
+  margin-bottom:0.5rem;
+}
+.features-wrapper p
+{
+  font-size:1rem;
+}
+.features-inner
+{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top:1rem;
+  padding:0;
+}
+.features-columns
+{
+  margin:1rem;
+  flex: 1 235px;
+}
+.banner-slogan img
+{
+  display:block;
+  margin:auto;
+}
+.testimonials
+{
+  background:#f3f3f3;
+}
+.testimonials-inner
+{
+  padding-bottom:2rem;
+  display:table;
+  width:100%;
+  border-spacing:1rem;
+  table-layout:fixed;
+  overflow:hidden;/*scrollflow slides in left/right. Causes scrollbars*/
+}
+.testimonials h1
+{
+  text-align:center;
+  display:table-caption;
+  padding:1rem 0;
+}
+.testimonials blockquote
+{
+  background: #ff8f17;
+  display:table-cell;
+  color:#FFF;
+  padding: 1rem;
+  width:32%;
+  border-radius:5px;
+  position:relative;
+}
+.testimonials blockquote::before
+{
+  content:"";
+  background:url(/cadeui/system/images/left-quote.png) no-repeat;
+  color: #FFF;
+  display:inline-block;
+  width:38px;
+  height:33px;
+  margin-right:1rem;
+}
+.testimonials blockquote::after
+{
+  content:"";
+  background: none;
+  position:absolute;
+  top:100%;
+  left:2rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1rem 1rem 0 0;
+  border-color: #ff8f17 transparent transparent transparent
+}
+@media only screen and (max-width:550px)
+{
+  .testimonials, .testimonials h1, .testimonials blockquote
+  {
+    display:block;
+    width:auto;
+    max-width:initial;
+    margin:0 auto 2rem;
+  }
+  .testimonials
+  {
+    margin-bottom:0;
+    padding:0 1rem 0;
+  }
+  .testimonials h1
+  {
+    margin-bottom:1rem;
+  }
+}
+.mailing-list
+{
+  padding:1rem 1rem 5rem;
+  margin:0 auto;
+  max-width:1000px;
+}
+.mailing-list h1
+{
+  text-align:center;
+  margin-bottom:4rem;
+  opacity:0.8;
+}
+.mailing-list form
+{
+  max-width:600px;
+  border-spacing:5px 0;
+  width:100%;
+  display:table;
+  margin:0 auto;
+}
+.mailing-list label
+{
+  display:table-cell;
+  vertical-align:middle;/*ie bug*/
+}
+.mailing-list input
+{
+  padding:0.9rem;
+  width:100%;
+  border-radius:5px;
+  font-size:1.1rem;
+  display:block;
+}
+.mailing-list input[type=email]
+{
+  background:url(/cadeui/system/images/envelope.png) no-repeat center right;
+}
+.mailing-list input[type=email]:focus
+{
+  border-color:#479DFF;
+  box-shadow:0px 0px 12px #81b4ea;
+  transition:0.2s all ease-in-out;
+}
+.mailing-list input[type=submit]
+{
+  background-color: #153853;
+  color: #FFF;
+  cursor:pointer;
+  max-width:100px;
+  transition: 0.4s all ease-out;
+}
+.mailing-list input[type=submit]:hover, .mailing-list input[type=submit]:focus
+{
+  background-color:#29AAE1;
+}
+footer
+{
+  background:#153853;
+  padding:1px 0;
+}
+.footer-inner
+{
+  display:table;
+  width:100%;
+  padding:0 1rem;
+  margin:2rem auto;
+  border-spacing:1rem;
+}
+footer section
+{
+  display:table-cell;
+  padding:3rem 1rem;
+  vertical-align: top;
+}
+footer section.brand
+{
+  border-right:1px solid rgba(217, 210, 210, 0.19);
+  padding-left:0;
+  width:300px;/*image width*/
+}
+footer section img
+{
+  max-width:300px;
+  display:block;
+  width:100%;
+}
+footer h1
+{
+  font-weight:bold;
+  border-bottom:1px solid rgba(217, 210, 210, 0.19);
+  color:#D9D2D2;
+  font-size:1rem;
+  opacity:0.7;
+  margin-bottom:0.5rem;
+  padding-bottom:6px;
+}
+footer a
+{
+  color:#e5e5e5;
+  font-size:0.9rem;
+  text-decoration:none;
+}
+footer a:hover, footer a:active, footer a:focus
+{
+  text-decoration:underline;
+}
+@media only screen and (max-width:550px)
+{
+  .footer-inner
+  {
+    display:block;
+    padding:1rem 1rem 0;
+  }
+  footer section.brand
+  {
+    display:none;
+  }
+  footer section
+  {
+    display:block;
+    margin:0 0 1rem;
+    padding:0;
+  }
+  footer section.brand img
+  {
+    margin:auto;
+  }
+}
+.overlay
+{
+  background:rgba(0,0,0,0.8);
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:9999;
+}
+.overlay .loading-bar
+{
+  position:absolute;
+  top:50%;
+  bottom:0;
+  left:0;
+  right:0;
+  max-width:500px;
+  width:100%;
+  margin:-20px auto 0;
+}
+.overlay .loading-bar span
+{
+  display:inline-block;
+  margin:0px 1px;
+  box-sizing:border-box;
+  width:19.3%;
+  height:40px;
+  background-color:#369AFF;
+}
+.overlay .loading-bar span:nth-child(1)
+{
+  -webkit-animation:loading 0.5s infinite alternate 0s;
+  -moz-animation:loading 0.5s infinite alternate 0s;
+  -ms-animation:loading 0.5s infinite alternate 0s;
+  -o-animation:loading 0.5s infinite alternate 0s;
+  animation:loading 0.5s infinite alternate 0s;
+}
+.overlay .loading-bar span:nth-child(2)
+{
+  -webkit-animation:loading 0.5s infinite alternate 0.2s;
+  -moz-animation:loading 0.5s infinite alternate 0.2s;
+  -ms-animation:loading 0.5s infinite alternate 0.2s;
+  -o-animation:loading 0.5s infinite alternate 0.2s;
+  animation:loading 0.5s infinite alternate 0.2s;
+}
+.overlay .loading-bar span:nth-child(3)
+{
+  -webkit-animation:loading 0.5s infinite alternate 0.4s;
+  -moz-animation:loading 0.5s infinite alternate 0.4s;
+  -ms-animation:loading 0.5s infinite alternate 0.4s;
+  -o-animation:loading 0.5s infinite alternate 0.4s;
+  animation:loading 0.5s infinite alternate 0.4s;
+}
+.overlay .loading-bar span:nth-child(4)
+{
+  -webkit-animation:loading 0.5s infinite alternate 0.6s;
+  -moz-animation:loading 0.5s infinite alternate 0.6s;
+  -ms-animation:loading 0.5s infinite alternate 0.6s;
+  -o-animation:loading 0.5s infinite alternate 0.6s;
+  animation:loading 0.5s infinite alternate 0.6s;
+}
+.overlay .loading-bar span:nth-child(5)
+{
+  -webkit-animation:loading 0.5s infinite alternate 0.8s;
+  -moz-animation:loading 0.5s infinite alternate 0.8s;
+  -ms-animation:loading 0.5s infinite alternate 0.8s;
+  -o-animation:loading 0.5s infinite alternate 0.8s;
+  animation:loading 0.5s infinite alternate 0.8s;
+}
+@-webkit-keyframes loading
+{
+  0%{opacity:0.1;}
+  100%{opacity:1;}
+}
+@-moz-keyframes loading
+{
+  0%{opacity:0.1;}
+  100%{opacity:1;}
+}
+@-ms-keyframes loading
+{
+  0%{opacity:0.1;}
+  100%{opacity:1;}
+}
+@-o-keyframes loading
+{
+  0%{opacity:0.1;}
+  100%{opacity:1;}
+}
+@keyframes loading
+{
+  0%{opacity:0.1;}
+  100%{opacity:1;}
+}
+.login-wrapper
+{
+  margin:1rem auto;
+  max-width:440px;
+}
+.login-wrapper #login
+{
+  box-shadow: 0px 0px 60px 10px #0E2436;
+  background-color: #FFF;
+  border:1px solid grey;
+  border-radius:7px;
+  padding:20px;
+  overflow:hidden;
+}
+.login-wrapper label, .login-wrapper span
+{
+  display:inline-block;
+  color:#888;
+  margin:5px 0;
+  font-size:0.8rem;
+}
+.login-wrapper label, .login-wrapper input[type=checkbox], .login-wrapper .forgotpw
+{
+  margin-left:0;
+}
+.login-wrapper .remove
+{
+  display:none;
+}
+.login-wrapper .remember-me
+{
+  display:block;
+  margin:0;
+}
+
+.login-wrapper input[type=text], .login-wrapper input[type=password], .login-wrapper input[type=email]
+{
+  padding:10px 0 10px 25px;
+  display:block;
+  width:100%;
+  color:gray;
+  position:relative;/*Sit on top of label*/
+  border-radius:10px;
+  margin-bottom:0.5rem;
+  transition:0.2s all linear;
+}
+.login-wrapper .lock
+{
+  background:url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
+}
+.login-wrapper .envelope
+{
+  background:url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
+}
+.login-wrapper input[type=text]:focus, .login-wrapper input[type=password]:focus, .login-wrapper input[type=email]:focus
+{
+  padding-left:10px;
+  outline:0;
+  border-color:#479DFF;
+  box-shadow:0px 0px 12px #81b4ea;
+  background:none;
+}
+.login-wrapper #submit
+{
+  background-color: #153853;
+  border-radius: 5px;
+  vertical-align:bottom;
+  color: #FFF;
+  cursor: pointer;
+  display:inline-block;
+  text-transform:uppercase;
+  padding:7px;
+  transition: 0.2s all ease-out;
+}
+.login-wrapper #submit:disabled
+{
+  background:gray;
+  cursor:default;
+  background:#999;
+  font-style:italic;
+}
+.login-wrapper #submit:disabled:hover, .login-wrapper  #submit:disabled:focus
+{
+  background:#999;
+  color:#FFF;
+}
+.login-wrapper #submit:hover, .login-wrapper #submit:focus 
+{
+  background: #479DFF;
+  color: #FFF;
+}
+.login-wrapper .password-holder, .login-wrapper .submit-holder
+{
+  overflow: hidden;
+  text-align: justify;
+  font-size:0;
+}
+.login-wrapper .password-holder::after, .login-wrapper .submit-holder::after
+{
+  content: "";
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.login-wrapper .rem-pw-holder
+{
+  display:inline-block;
+}
+.login-wrapper .showHide
+{
+  padding-left:18px;
+  cursor:pointer;
+}
+.login-wrapper .showHide.showPW
+{
+  background:url(/cadeui/system/images/show-password.png) no-repeat center left;
+}
+.login-wrapper .showHide.hidePW
+{
+  background:url(/cadeui/system/images/hide-password.png) no-repeat center left;
+}
+.login-wrapper .forgotpw
+{
+  text-decoration:none;
+  color:#479DFF;
+  display:inline-block;
+  font-size:0.8rem;
+}
+.login-wrapper .forgotpw:hover
+{
+  text-decoration:underline;
+}
+.login-wrapper span.hide
+{
+  text-indent:-999rem;
+}
+.login-wrapper span.error
+{
+  color:red;
+  margin:0;
+  font-weight:bold;
+}
+.login-wrapper input.error.envelope
+{
+  border-color:red;
+  background:url(/cadeui/system/images/error-x.png) no-repeat 98% center, url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
+}
+.login-wrapper input.error.envelope:focus
+{
+  border-color:red;
+  background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
+  box-shadow:0px 0px 12px red;
+}
+.login-wrapper input.valid.envelope
+{
+  border-color:green;
+  background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center, url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
+}
+.login-wrapper input.valid.envelope:focus
+{
+  border-color:green;
+  background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
+  box-shadow:0px 0px 12px green;
+}
+.login-wrapper input.error.lock
+{
+  border-color:red;
+  background:url(/cadeui/system/images/error-x.png) no-repeat 98% center, url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
+}
+.login-wrapper input.error.lock:focus
+{
+  border-color:red;
+  background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
+  box-shadow:0px 0px 12px red;
+}
+.login-wrapper input.valid.lock
+{
+  border-color:green;
+  background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center, url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
+}
+.login-wrapper input.valid.lock:focus
+{
+  border-color:green;
+  background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
+  box-shadow:0px 0px 12px green;
+}

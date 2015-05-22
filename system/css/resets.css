@@ -1,0 +1,69 @@
+*,*:before,*:after
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, code, img, dl, dt, dd, ol, ul, li,
+form, label, legend, fieldset, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas,
+figure, figcaption, footer, header,
+menu, nav, output, section, audio, video
+{
+  margin: 0;
+  font-size:1.1rem;
+  padding: 0;
+  border: 0;
+  color:#5c5c5c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight:500;
+  vertical-align: baseline;
+}
+article, details, figcaption, figure,
+footer, header, menu, nav, section
+{
+  display: block;
+}
+html
+{
+  font-size:16px;/*override 1.1rem*/
+}
+@media only screen and (max-width: 1000px)
+{
+  html
+  {
+    font-size:14px;
+  }
+}
+body
+{
+  line-height: 1.3;
+  font-family:"Open Sans", Tunga, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+table
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img
+{
+  max-width:100%;
+  vertical-align:bottom;
+  height:auto;
+}
+ul
+{
+  list-style:none;
+}
+.clearfix::after
+{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
