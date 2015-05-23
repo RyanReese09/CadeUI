@@ -9,17 +9,20 @@ $("#logout").click(function(event) {
   });
   return false;
 });
-$(".login").click(function(e){
+$(".login").click(function(e) {
   e.preventDefault();
-  $('<div>').dialog({
-    modal: true,
-    open: function () {
-      $(this).load("/cadeui/login.php");
-    },         
-    height: 400,
-    width: 400
-  });
+  var $dialog = $('<div></div>')
+               .html('<iframe style="border: 0px; " src="/cadeui/login" width="100%" height="100%"></iframe>')
+               .dialog({
+                   autoOpen: false,
+                   modal: true,
+                   height: 200,
+                   width: 400,
+               });
+$dialog.dialog('open');
 });
+
+
 $(".top-nav ul li a").click(function(){
   setTimeout(function(){
     $(".hamburger").attr("checked", false);
