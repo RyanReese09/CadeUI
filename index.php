@@ -6,13 +6,13 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <body>
 <header id="top" data-scroll-index="0">
   <div class="header-inner clearfix">
-    <a href="/cadeui/" class="logo" title="Home" tabindex="0"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
-    <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="2">Register</a>
-    <a href="/cadeui/login" class="login" title="Login" role="button" tabindex="1">Login</a>
+    <a href="/cadeui/" class="logo" title="Home" tabindex="1"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
+    <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="3">Register</a>
+    <a href="/cadeui/login" class="login" title="Login" role="button" tabindex="2">Login</a>
   </div>
   <nav class="top-nav">
     <input type="checkbox" class="hamburger" id="hamburger">
-    <label class="trigger" for="hamburger"><span></span></label>
+    <label class="trigger" for="hamburger" tabindex="4"><span></span></label>
     <ul>
       <li><a href="#top" data-scroll-nav="0" title="Home" tabindex="5">Home</a></li>
       <li><a href="#getting-started" data-scroll-nav="1" title="Getting Started" tabindex="6">Get Started</a></li>
