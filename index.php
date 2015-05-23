@@ -6,26 +6,26 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <body>
 <header id="top" data-scroll-index="0">
   <div class="header-inner clearfix">
-    <a href="/cadeui/" class="logo" title="Home"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
-    <a href="/cadeui/register" class="register" title="Register" role="button">Register</a>
-    <a href="/cadeui/login" class="login" title="Login" role="button">Login</a>
+    <a href="/cadeui/" class="logo" title="Home" tabindex="0"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
+    <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="2">Register</a>
+    <a href="/cadeui/login" class="login" title="Login" role="button" tabindex="1">Login</a>
   </div>
   <nav class="top-nav">
     <input type="checkbox" class="hamburger" id="hamburger">
     <label class="trigger" for="hamburger"><span></span></label>
     <ul>
-      <li><a href="#top" data-scroll-nav="0" title="Home">Home</a></li>
-      <li><a href="#getting-started" data-scroll-nav="1" title="Getting Started">Get Started</a></li>
-      <li><a href="#features" data-scroll-nav="2" title="CadeUI Features">Features</a></li>
-      <li><a href="#testimonials" data-scroll-nav="3" title="Testimonials">Testimonials</a></li>
-      <li><a href="#newsletter" data-scroll-nav="4" title="Newsletter Signup">Newsletter</a></li>
+      <li><a href="#top" data-scroll-nav="0" title="Home" tabindex="5">Home</a></li>
+      <li><a href="#getting-started" data-scroll-nav="1" title="Getting Started" tabindex="6">Get Started</a></li>
+      <li><a href="#features" data-scroll-nav="2" title="CadeUI Features" tabindex="7">Features</a></li>
+      <li><a href="#testimonials" data-scroll-nav="3" title="Testimonials" tabindex="8">Testimonials</a></li>
+      <li><a href="#newsletter" data-scroll-nav="4" title="Newsletter Signup" tabindex="9">Newsletter</a></li>
     </ul>
   </nav>
 </header>
 <div class="banner-why">
   <h1>What is CadeUI?</h1>
   <h2>CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
-  <a href="#" class="new-cade" title="New Cade" role="button"><span>New Cade</span></a>
+  <a href="#" class="new-cade" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
 </div>
 <div class="getting-started -pop" id="getting-started" data-scroll-index="1">
   <div class="gs-inner">
@@ -91,8 +91,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="mailing-list" data-scroll-index="4" id="newsletter">
   <h1>Newsletter Signup</h1>
   <form action="#" method="post">
-    <label><input type="email" placeholder="E-mail" name="email"></label>
-    <label><input type="submit" value="Submit" name="submit"></label>
+    <label><input type="email" placeholder="E-mail" name="email"tabindex="11"></label>
+    <label><input type="submit" value="Submit" name="submit" tabindex="12"></label>
   </form>
 </div>
 <footer>
@@ -103,27 +103,27 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <section>
       <h1>CadeUI</h1>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Feedback</a></li>
-        <li><a href="#">Sitemap</a></li>
+        <li><a href="#" title="fillinlater" tabindex="13">About</a></li>
+        <li><a href="#" title="fillinlater" tabindex="14">Feedback</a></li>
+        <li><a href="#" title="fillinlater" tabindex="15">Sitemap</a></li>
       </ul>
     </section>
     <section>
       <h1>Support</h1>
       <ul>
-        <li><a href="#">Docs</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Helpful Tips</a></li>
-        <li><a href="#">F.A.Q.</a></li>
+        <li><a href="#" title="fillinlater" tabindex="16">Docs</a></li>
+        <li><a href="#" title="fillinlater" tabindex="17">Contact</a></li>
+        <li><a href="#" title="fillinlater" tabindex="18">Helpful Tips</a></li>
+        <li><a href="#" title="fillinlater" tabindex="19">F.A.Q.</a></li>
       </ul>
     </section>
     <section>
       <h1>Miscellaneous</h1>
       <ul>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Statistics</a></li>
+        <li><a href="#" title="fillinlater" tabindex="20">Press</a></li>
+        <li><a href="#" title="fillinlater" tabindex="21">Terms</a></li>
+        <li><a href="#" title="fillinlater" tabindex="22">Privacy</a></li>
+        <li><a href="#" title="fillinlater" tabindex="23">Statistics</a></li>
       </ul>
     </section>
   </div>
