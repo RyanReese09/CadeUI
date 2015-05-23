@@ -3,7 +3,7 @@ $page="Homepage";
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
 <body>
-<header id="top" data-scroll-index="0" role="UserActions">
+<header id="top" data-scroll-index="0" role="banner">
   <div class="header-inner clearfix">
     <a href="/cadeui/" class="logo" title="Home" tabindex="1"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
     <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="3">Register</a>
@@ -12,7 +12,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
   <nav class="top-nav" role="navigation">
     <input type="checkbox" class="hamburger" id="hamburger">
     <label class="trigger" for="hamburger" tabindex="4"><span></span></label>
-    <ul>
+    <ul role="menu">
       <li><a href="#top" data-scroll-nav="0" title="Home" tabindex="5">Home</a></li>
       <li><a href="#getting-started" data-scroll-nav="1" title="Getting Started" tabindex="6">Get Started</a></li>
       <li><a href="#features" data-scroll-nav="2" title="CadeUI Features" tabindex="7">Features</a></li>
@@ -21,12 +21,12 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     </ul>
   </nav>
 </header>
-<div class="banner-why" role="banner" role="ProductDescription" aria-labelledby="whatiscadeui">
+<div class="banner-why" role="contentinfo" aria-labelledby="whatiscadeui">
   <h1 id="whatiscadeui">What is CadeUI?</h1>
   <h2>CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
   <a href="#" class="new-cade" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
 </div>
-<div class="getting-started -pop" id="getting-started" data-scroll-index="1" role="GettingStarted" aria-labelledby="gettingstarted">
+<div class="getting-started -pop" id="getting-started" data-scroll-index="1" role="contentinfo" aria-labelledby="gettingstarted">
   <div class="gs-inner">
     <h1 id="gettingstarted">Getting started is easy...</h1>
     <p>For single sandbox instances, you can simply click the "New Cade" button and you'll be directed to begin. However, you might want to consider registering an account and making full use of what CadeUI has to offer.</p>
@@ -41,7 +41,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     </ul>
   </div>
 </div>
-<div class="features-wrapper" id="features" data-scroll-index="2" role="Persuasion" aria-labelledby="features">
+<div class="features-wrapper" id="features" data-scroll-index="2" role="contentinfo" aria-labelledby="features">
   <h1 id="features">Why use CadeUI?</h1>
   <div class="features-inner">
     <div class="features-columns" aria-labelledby="nosetup">
@@ -76,10 +76,10 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     </div>
   </div>
 </div>
-<div class="banner-slogan" role="Slogan">
+<div class="banner-slogan" role="contentinfo">
   <img src="/cadeui/system/images/cat-music-banner.png" alt="Code is like music to my ears" width="2000" height="500">
 </div>
-<div class="testimonials" id="testimonials" data-scroll-index="3" role="Testimonials" aria-labelledby="testimonials">
+<div class="testimonials" id="testimonials" data-scroll-index="3" role="contentinfo" aria-labelledby="testimonials">
   <div class="testimonials-inner">
     <h1 id="testimonials">Developers Love Us</h1>
     <blockquote class="scrollflow -slide-right -opacity" cite="">why the fug are you quoting me? Get the fug out of my face. No don't make that a quote. Stupid nerd</blockquote>
@@ -87,14 +87,14 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <blockquote class="scrollflow -slide-left -opacity" cite="">why the fug are you quoting me? Get the fug out of my face. No don't make that a quote. Stupid nerd</blockquote>
   </div>
 </div>
-<div class="mailing-list" data-scroll-index="4" id="newsletter" role="Newsletter" aria-labelledby="newslettersignup">
+<div class="mailing-list" data-scroll-index="4" id="newsletter" role="contentinfo" aria-labelledby="newslettersignup">
   <h1 id="newslettersignup">Newsletter Signup</h1>
   <form action="#" method="post">
     <label><input type="email" placeholder="E-mail" name="email"tabindex="12"></label>
     <label><input type="submit" value="Submit" name="submit" tabindex="13"></label>
   </form>
 </div>
-<footer role="footer">
+<footer role="contentinfo">
   <div class="footer-inner">
     <section class="brand">
       <img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI">
