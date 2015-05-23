@@ -9,7 +9,7 @@ $("#logout").click(function(event) {
   });
   return false;
 });
-$("#login").click(function(e){
+$(".login").click(function(e){
   e.preventDefault();
   $('<div>').dialog({
     modal: true,
