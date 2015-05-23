@@ -63,7 +63,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <div class="features-columns">
       <img src="/cadeui/system/images/advantage-features.gif" width="125" height="125" alt="Many Features" class="scrollflow -pop -opacity">
       <h2>Features-galore</h2>
-      <p>We are dedicated to providing the best experience for you. Have a feature request? <a href="/cadeui/contact" title="Contact">Let us know!</a></p>
+      <p>We are dedicated to providing the best experience for you. Have a feature request? <a href="/cadeui/contact" title="Contact" tabindex="11">Let us know!</a></p>
     </div>
     <div class="features-columns">
       <img src="/cadeui/system/images/advantage-dependable.gif" width="125" height="125" alt="Very Dependable" class="scrollflow -pop -opacity">
@@ -91,8 +91,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="mailing-list" data-scroll-index="4" id="newsletter">
   <h1>Newsletter Signup</h1>
   <form action="#" method="post">
-    <label><input type="email" placeholder="E-mail" name="email"tabindex="11"></label>
-    <label><input type="submit" value="Submit" name="submit" tabindex="12"></label>
+    <label><input type="email" placeholder="E-mail" name="email"tabindex="12"></label>
+    <label><input type="submit" value="Submit" name="submit" tabindex="13"></label>
   </form>
 </div>
 <footer>
@@ -103,27 +103,27 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <section>
       <h1>CadeUI</h1>
       <ul>
-        <li><a href="#" title="fillinlater" tabindex="13">About</a></li>
-        <li><a href="#" title="fillinlater" tabindex="14">Feedback</a></li>
-        <li><a href="#" title="fillinlater" tabindex="15">Sitemap</a></li>
+        <li><a href="#" title="fillinlater" tabindex="14">About</a></li>
+        <li><a href="#" title="fillinlater" tabindex="15">Feedback</a></li>
+        <li><a href="#" title="fillinlater" tabindex="16">Sitemap</a></li>
       </ul>
     </section>
     <section>
       <h1>Support</h1>
       <ul>
-        <li><a href="#" title="fillinlater" tabindex="16">Docs</a></li>
-        <li><a href="#" title="fillinlater" tabindex="17">Contact</a></li>
-        <li><a href="#" title="fillinlater" tabindex="18">Helpful Tips</a></li>
-        <li><a href="#" title="fillinlater" tabindex="19">F.A.Q.</a></li>
+        <li><a href="#" title="fillinlater" tabindex="17">Docs</a></li>
+        <li><a href="#" title="fillinlater" tabindex="18">Contact</a></li>
+        <li><a href="#" title="fillinlater" tabindex="19">Helpful Tips</a></li>
+        <li><a href="#" title="fillinlater" tabindex="20">F.A.Q.</a></li>
       </ul>
     </section>
     <section>
       <h1>Miscellaneous</h1>
       <ul>
-        <li><a href="#" title="fillinlater" tabindex="20">Press</a></li>
-        <li><a href="#" title="fillinlater" tabindex="21">Terms</a></li>
-        <li><a href="#" title="fillinlater" tabindex="22">Privacy</a></li>
-        <li><a href="#" title="fillinlater" tabindex="23">Statistics</a></li>
+        <li><a href="#" title="fillinlater" tabindex="21">Press</a></li>
+        <li><a href="#" title="fillinlater" tabindex="22">Terms</a></li>
+        <li><a href="#" title="fillinlater" tabindex="23">Privacy</a></li>
+        <li><a href="#" title="fillinlater" tabindex="24">Statistics</a></li>
       </ul>
     </section>
   </div>
