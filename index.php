@@ -9,7 +9,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="3">Register</a>
     <a href="/cadeui/login" class="login" title="Login" role="button" tabindex="2">Login</a>
   </div>
-  <nav class="top-nav">
+  <nav class="top-nav" role="navigation">
     <input type="checkbox" class="hamburger" id="hamburger">
     <label class="trigger" for="hamburger" tabindex="4"><span></span></label>
     <ul>
