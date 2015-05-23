@@ -9,7 +9,17 @@ $("#logout").click(function(event) {
   });
   return false;
 });
-
+$("#login").click($(function(){
+  $('<div>').dialog({
+    modal: true,
+    open: function () {
+      $(this).load("/cadeui/login.php");
+    },         
+    height: 400,
+    width: 400,
+    title: 'Dynamically Loaded Page'
+  });
+});
 $(".top-nav ul li a").click(function(){
   setTimeout(function(){
     $(".hamburger").attr("checked", false);
