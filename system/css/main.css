@@ -38,7 +38,7 @@ header .login
 {
   border-right:0;
 }
-header .register:hover, header .login:hover
+header .register:hover, header .login:hover, header .register:focus, header .login:focus
 {
   color:#000;
   background: #ff8f17;
