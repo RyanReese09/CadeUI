@@ -10,6 +10,7 @@ if($page==="Homepage")
 <script type="text/javascript" src="/cadeui/system/js/scrollflow.js"></script>
 <script type="text/javascript" src="/cadeui/system/js/sticky.js"></script>
 <script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
+<script type="text/javascript" src="/cadeui/system/js/login.js"></script>
 <?php
 }
 else if($page==="Login")
