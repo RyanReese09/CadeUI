@@ -7,8 +7,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <header id="top" data-scroll-index="0">
   <div class="header-inner clearfix">
     <a href="/cadeui/" class="logo" title="Home"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
-    <a href="/cadeui/register" class="register" title="Register">Register</a>
-    <a href="/cadeui/login" class="login" title="Login">Login</a>
+    <a href="/cadeui/register" class="register" title="Register" role="button">Register</a>
+    <a href="/cadeui/login" class="login" title="Login" role="button">Login</a>
   </div>
   <nav class="top-nav">
     <input type="checkbox" class="hamburger" id="hamburger">
@@ -25,7 +25,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="banner-why">
   <h1>What is CadeUI?</h1>
   <h2>CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
-  <a href="#" class="new-cade" title="New Cade"><span>New Cade</span></a>
+  <a href="#" class="new-cade" title="New Cade" role="button"><span>New Cade</span></a>
 </div>
 <div class="getting-started -pop" id="getting-started" data-scroll-index="1">
   <div class="gs-inner">
