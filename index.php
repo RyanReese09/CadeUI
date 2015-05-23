@@ -21,9 +21,9 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     </ul>
   </nav>
 </header>
-<div class="banner-why" role="contentinfo" aria-labelledby="whatiscadeui">
+<div class="banner-why" role="contentinfo" aria-labelledby="whatiscadeui" aria-describedby="description">
   <h1 id="whatiscadeui">What is CadeUI?</h1>
-  <h2>CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
+  <h2 id="description">CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
   <a href="#" class="new-cade" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
 </div>
 <div class="getting-started -pop" id="getting-started" data-scroll-index="1" role="contentinfo" aria-labelledby="gettingstarted">
@@ -31,7 +31,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <h1 id="gettingstarted">Getting started is easy...</h1>
     <p>For single sandbox instances, you can simply click the "New Cade" button and you'll be directed to begin. However, you might want to consider registering an account and making full use of what CadeUI has to offer.</p>
     <h2>Why should I register an account?</h2>
-    <ul>
+    <ul role="list">
       <li>Link Cades together to create fully fledged websites</li>
       <li>Give custom names to your Cades</li>
       <li>Your saved Cades will not be auto-deleted after 7 days</li>
@@ -90,7 +90,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="mailing-list" data-scroll-index="4" id="newsletter" role="contentinfo" aria-labelledby="newslettersignup">
   <h1 id="newslettersignup">Newsletter Signup</h1>
   <form action="#" method="post">
-    <label><input type="email" placeholder="E-mail" name="email"tabindex="12"></label>
+    <label><input type="email" placeholder="E-mail" name="email"tabindex="12" aria-required="true" aria-describedby="newslettersignup"></label>
     <label><input type="submit" value="Submit" name="submit" tabindex="13"></label>
   </form>
 </div>
@@ -99,26 +99,26 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <section class="brand">
       <img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI">
     </section>
-    <section  aria-labelledby="product">
+    <section aria-labelledby="product">
       <h1 id="product">CadeUI</h1>
-      <ul>
+      <ul role="list">
         <li><a href="#" title="fillinlater" tabindex="14">About</a></li>
         <li><a href="#" title="fillinlater" tabindex="15">Feedback</a></li>
         <li><a href="#" title="fillinlater" tabindex="16">Sitemap</a></li>
       </ul>
     </section>
-    <section  aria-labelledby="support">
+    <section aria-labelledby="support">
       <h1 id="support">Support</h1>
-      <ul>
+      <ul role="list">
         <li><a href="#" title="fillinlater" tabindex="17">Docs</a></li>
         <li><a href="#" title="fillinlater" tabindex="18">Contact</a></li>
         <li><a href="#" title="fillinlater" tabindex="19">Helpful Tips</a></li>
         <li><a href="#" title="fillinlater" tabindex="20">F.A.Q.</a></li>
       </ul>
     </section>
-    <section  aria-labelledby="misc">
+    <section aria-labelledby="misc">
       <h1 id="misc">Miscellaneous</h1>
-      <ul>
+      <ul role="list">
         <li><a href="#" title="fillinlater" tabindex="21">Press</a></li>
         <li><a href="#" title="fillinlater" tabindex="22">Terms</a></li>
         <li><a href="#" title="fillinlater" tabindex="23">Privacy</a></li>
