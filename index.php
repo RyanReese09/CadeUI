@@ -1,5 +1,4 @@
 <?php
-//change
 $page="Homepage";
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
