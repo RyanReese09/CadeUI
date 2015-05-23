@@ -17,8 +17,7 @@ $(".login").click(function(e){
       $(this).load("/cadeui/login.php");
     },         
     height: 400,
-    width: 400,
-    title: 'Dynamically Loaded Page'
+    width: 400
   });
 });
 $(".top-nav ul li a").click(function(){
