@@ -16,7 +16,7 @@ if(!empty($_COOKIE["rememberMe"]))
 echo "<br><br>You chose us to remember you. How cute.";
 
 ?>
-<br><br><a href="/cadeui/logout" title="Logout" id="logout">Logout</a>
+<br><br><a href="/cadeui/logout" title="Logout" class="logout">Logout</a>
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/js-files.php");
 ?>
