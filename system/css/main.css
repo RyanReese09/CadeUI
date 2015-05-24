@@ -770,6 +770,7 @@ footer a:hover, footer a:active, footer a:focus
 {
   color:red;
   margin:0;
+  display:block;
   font-weight:bold;
 }
 .login-wrapper input.error.envelope
