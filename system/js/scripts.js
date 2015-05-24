@@ -1,4 +1,4 @@
-$("#logout").click(function(event) {
+$(".logout").click(function(event) {
   event.preventDefault();
   $("body").append("<div class=\"overlay\"><div class=\"loading-bar\"><span></span><span></span><span></span><span></span><span></span></div></div>");
   $.ajax({
