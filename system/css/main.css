@@ -59,23 +59,24 @@ header
 {
   text-align:right;
 }
-@media only screen and (max-width:550px)
-{
-  .header-inner
-  {
-    text-align:center;
-  }
-}
 header .logo
 {
   float:left;
 }
 @media only screen and (max-width:550px)
 {
+  .header-inner
+  {
+    text-align:center;
+  }
   header .logo
   {
     display:block;
     float:none;
+  }
+  header .register, header .login
+  {
+    padding:10px 20px;
   }
 }
 header .top-nav
