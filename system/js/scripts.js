@@ -14,7 +14,7 @@ $(".login").click(function(e){
   e.preventDefault();
   $('<div>').dialog({
     modal: true,
-    show: {effect: 'fade', duration: 250},
+    show: {effect: 'fade', duration: 1000},
     hide: {effect: 'fade', duration: 5000},
     open: function () {
       $(this).load("/cadeui/login.php");
