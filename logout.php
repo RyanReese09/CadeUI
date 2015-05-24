@@ -8,5 +8,5 @@ $logout->newAuthKey($_SESSION["userID"]);
 setcookie("rememberMe", "", -1, "/");
 session_unset();
 session_destroy();
-header("Location: http://www.codefundamentals.com/cadeui/login");
+header("Location: http://www.codefundamentals.com/cadeui/index");
 ?>
