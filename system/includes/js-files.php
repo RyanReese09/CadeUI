@@ -28,4 +28,12 @@ else if($page==="Login")
 <script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
 <?php
 }
+else
+{
+?>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<?php
+}
 ?>
