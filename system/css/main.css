@@ -59,26 +59,6 @@ header .logo
 {
   float:left;
 }
-header .register, header .login
-{
-  float:right;
-  color:#FFF;
-  font-size:1rem;
-  border-left:1px solid #CCC;
-  border-right:1px solid #CCC;
-  padding:1.5rem;
-  text-decoration:none;
-}
-header .login
-{
-  border-right:0;
-}
-header .register:hover, header .login:hover, header .register:focus, header .login:focus
-{
-  color:#000;
-  background: #ff8f17;
-  transition:0.3s all ease-in-out;
-}
 header .top-nav
 {
   background: #29AAE1;
