@@ -4,7 +4,7 @@ $("#logout").click(function(event) {
   $.ajax({
     url: "/cadeui/logout",
     success: function(){
-      window.location.href="http://www.codefundamentals.com/cadeui/login";
+      window.location.href="http://www.codefundamentals.com/cadeui/index";
     }
   });
   return false;
