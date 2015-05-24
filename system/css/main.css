@@ -59,6 +59,13 @@ header
 {
   text-align:right;
 }
+@media only screen and (max-width:550px)
+{
+  .header-inner
+  {
+    text-align:center;
+  }
+}
 header .logo
 {
   float:left;
