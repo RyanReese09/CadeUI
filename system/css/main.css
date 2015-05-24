@@ -70,6 +70,14 @@ header .logo
 {
   float:left;
 }
+@media only screen and (max-width:550px)
+{
+  header .logo
+  {
+    display:block;
+    float:none;
+  }
+}
 header .top-nav
 {
   background: #29AAE1;
