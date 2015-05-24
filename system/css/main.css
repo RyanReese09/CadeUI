@@ -27,7 +27,7 @@ h1
   border-radius: 10px;
   transition:0.1s transform ease-in-out, 0.4s color ease-in-out;
   display:inline-block;
-  padding:10px 40px;
+  padding:1rem 3rem;
   text-shadow: 0px 1px #fff, 0px -1px #DE9B4B;
 }
 .button span:hover
@@ -65,7 +65,7 @@ header .logo
 }
 header .register span, header .login span
 {
-  padding:10px 20px;
+  padding:0.5rem 1rem;
 }
 @media only screen and (max-width:550px)
 {
