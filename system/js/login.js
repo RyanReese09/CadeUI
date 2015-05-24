@@ -33,7 +33,7 @@ $(".showHide").click(function() {
   }
 });
 $(".showHide").removeClass("remove");
-$("body").on(".login-wrapper"){ function() {
+$("body").on(".login-wrapper", function() {
 $("#login").submit(function(event) {
   event.preventDefault();
   if($("#login").valid())
@@ -80,4 +80,4 @@ $("#login").submit(function(event) {
   }
   return false;
 });
-}});
+});
