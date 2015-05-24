@@ -12,10 +12,12 @@ $("#logout").click(function(event) {
 
 $(".login").click(function(e){
   e.preventDefault();
+  
   $('<div>').dialog({
     modal: true,
     show: {effect: 'fade', duration: 900},
     hide: {effect: 'fade', duration: 5000},
+    overlay: { backgroundColor: "#000", opacity: 0.8 },
     open: function () {
       $(this).load("/cadeui/login.php");
     },
