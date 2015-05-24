@@ -16,7 +16,7 @@ $(".login").click(function(e){
   $('<div>').dialog({
     modal: true,
     dialogClass: "login-ui-dialog",
-    show: {effect: 'fade', duration: 300},
+    show: {effect: 'slide', duration: 300},
     hide: {effect: 'fade', duration: 500},
     open: function () {
       $("body").append("<div class=\"overlay\"></div>");
