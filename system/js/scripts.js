@@ -26,7 +26,7 @@ $(".login").click(function(e){
       $(this).remove();
       $(".overlay").remove();
     },
-    width: "auto"
+    width: $(window).width()
   });
 });
 
