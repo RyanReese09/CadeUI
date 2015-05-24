@@ -531,6 +531,10 @@ footer a:hover, footer a:active, footer a:focus
   position:absolute;
   right:0;
   top:0;
+  width:100%;
+  background-color:#CCC;
+  text-align:right;
+  padding:5px 0;
 }
 .overlay
 {
@@ -638,7 +642,7 @@ footer a:hover, footer a:active, footer a:focus
   background-color: #FFF;
   border:1px solid grey;
   border-radius:7px;
-  padding:20px;
+  padding:30px 20px;
   overflow:hidden;
 }
 .login-wrapper label, .login-wrapper span
