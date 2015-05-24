@@ -12,4 +12,10 @@ if($page==="Homepage")
 <script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
 <?php
 }
+else if($page==="Login")
+{
+?>
+<script type="text/javascript" src="/cadeui/system/js/login.js"></script>
+<?php
+}
 ?>
