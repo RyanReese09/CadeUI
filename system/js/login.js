@@ -38,6 +38,7 @@ $("#login").submit(function(event) {
   if($("#login").valid())
   {
     $("body").append("<div class=\"overlay\"><div class=\"loading-bar\"><span></span><span></span><span></span><span></span><span></span></div></div>");
+    $(".overlay").css("z-index","9999");
     var user=$("#email").val();
     var pass=$("#password").val();
     if($("#remember").prop("checked"))
@@ -62,6 +63,7 @@ $("#login").submit(function(event) {
         else
         {
           $(".overlay").remove();
+          $(".overlay").css("z-index","9997");
           $("#submit, #email, #password").prop("disabled", false);
           if(data.result[1]==="userpass")
           {

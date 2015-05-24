@@ -521,7 +521,7 @@ footer a:hover, footer a:active, footer a:focus
 }
 .login-ui-dialog
 {
-  z-index:9999;
+  z-index:9998;
   position:fixed;
   max-width:440px;
 }
@@ -539,7 +539,7 @@ footer a:hover, footer a:active, footer a:focus
   bottom:0;
   left:0;
   right:0;
-  z-index:9998;
+  z-index:9997;
 }
 .overlay .loading-bar
 {
