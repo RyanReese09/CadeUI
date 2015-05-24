@@ -9,7 +9,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <?php
     if(isset($_SESSION["loggedin"]))
     {
-      echo htmlspecialchars($_SESSION["firstname"]);
+      echo "<a href=\"/cadeui/logout\" class=\"logout\" title=\"Logout\" tabindex=\"2\">Logout</a>";
     }
     else
     {
