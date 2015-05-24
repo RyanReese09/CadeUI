@@ -15,8 +15,8 @@ $(".login").click(function(e){
   
   $('<div>').dialog({
     modal: true,
-    show: {effect: 'fade', duration: 900},
-    hide: {effect: 'fade', duration: 5000},
+    show: {effect: 'fade', duration: 500},
+    hide: {effect: 'fade', duration: 500},
     open: function () {
       $("body").append("<div class=\"overlay\"></div>");
       $(this).load("/cadeui/login.php");
