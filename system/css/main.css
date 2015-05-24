@@ -519,7 +519,7 @@ footer a:hover, footer a:active, footer a:focus
     margin:auto;
   }
 }
-.ui-dialog
+.login-ui-dialog
 {
   z-index:9999;
   max-width:440px;

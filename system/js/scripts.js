@@ -15,6 +15,7 @@ $(".login").click(function(e){
   
   $('<div>').dialog({
     modal: true,
+    dialogClass: "login-ui-dialog",
     show: {effect: 'fade', duration: 500},
     hide: {effect: 'fade', duration: 500},
     open: function () {
