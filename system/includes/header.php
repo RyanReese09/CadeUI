@@ -20,7 +20,7 @@ if(!isset($_SESSION["loggedin"]))
     {
       if($page==="Dashboard")
       {
-        header("Location: http://www.codefundamentals.com/cadeui/login");
+        header("Location: http://www.codefundamentals.com/cadeui/index");
         exit();
       }
     }
@@ -29,7 +29,7 @@ if(!isset($_SESSION["loggedin"]))
   {
     if($page==="Dashboard")
     {
-      header("Location: http://www.codefundamentals.com/cadeui/login");
+      header("Location: http://www.codefundamentals.com/cadeui/index");
       exit();
     }
   }
@@ -38,7 +38,7 @@ else
 {
   if($page==="Login")
   {
-    header("Location: http://www.codefundamentals.com/cadeui/dashboard");
+    header("Location: http://www.codefundamentals.com/cadeui/index");
     exit();
   }
 }
