@@ -634,7 +634,7 @@ footer a:hover, footer a:active, footer a:focus
 }
 .login-wrapper
 {
-  margin:1rem auto;
+  margin:1rem auto 0;
   max-width:440px;
 }
 .login-wrapper #login
