@@ -3,7 +3,9 @@ $page="Login";
 if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest')
 {
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
-echo "<body>";
+?>
+<body>
+<?php
 }
 ?>
 <div class="login-wrapper">
