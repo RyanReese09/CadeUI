@@ -9,13 +9,13 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <?php
     if(isset($_SESSION["loggedin"]))
     {
-      echo "<a href=\"/cadeui/logout\" class=\"logout\" title=\"Logout\" tabindex=\"2\">Logout</a>";
+      echo "<a href=\"/cadeui/logout\" class=\"logout button\" title=\"Logout\" tabindex=\"2\">Logout</a>";
     }
     else
     {
     ?>
-    <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="3">Register</a>
-    <a href="/cadeui/login" class="login" title="Login" role="button" tabindex="2">Login</a>
+    <a href="/cadeui/register" class="register button" title="Register" role="button" tabindex="3"><span>Register</span></a>
+    <a href="/cadeui/login" class="login button" title="Login" role="button" tabindex="2"><span>Login</span></a>
     <?php
     }
     ?>
@@ -35,7 +35,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="banner-why" role="contentinfo" aria-labelledby="whatiscadeui" aria-describedby="description">
   <h1 id="whatiscadeui">What is CadeUI?</h1>
   <h2 id="description">CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
-  <a href="#" class="new-cade" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
+  <a href="#" class="button" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
 </div>
 <div class="getting-started -pop" id="getting-started" data-scroll-index="1" role="contentinfo" aria-labelledby="gettingstarted">
   <div class="gs-inner">
