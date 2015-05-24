@@ -522,6 +522,7 @@ footer a:hover, footer a:active, footer a:focus
 .ui-dialog
 {
   z-index:9999;
+  max-width:440px;
 }
 .overlay
 {

@@ -25,8 +25,7 @@ $(".login").click(function(e){
       $(this).remove();
       $(".overlay").remove();
     },
-    width: "auto",
-    maxWidth: 440
+    width: "auto"
   });
 });
 
