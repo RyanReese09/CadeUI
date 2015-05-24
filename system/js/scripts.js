@@ -17,7 +17,8 @@ $(".login").click(function(e){
     open: function () {
       $(this).load("/cadeui/login.php");
     },
-    width: 440
+    width: "auto",
+    maxWidth: 440
   });
 });
 
