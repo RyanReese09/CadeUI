@@ -17,9 +17,13 @@ $(".login").click(function(e){
     modal: true,
     show: {effect: 'fade', duration: 900},
     hide: {effect: 'fade', duration: 5000},
-    overlay: { backgroundColor: "#000", opacity: 0.8 },
     open: function () {
+      $("body").append("<div class=\"overlay\"></div>");
       $(this).load("/cadeui/login.php");
+    },
+    close: function() {
+      $(this).remove();
+      $(".overlay").remove();
     },
     width: "auto",
     maxWidth: 440
