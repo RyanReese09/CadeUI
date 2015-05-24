@@ -524,6 +524,11 @@ footer a:hover, footer a:active, footer a:focus
   z-index:9999;
   max-width:440px;
 }
+.login-ui-dialog .ui-dialog-titlebar
+{
+  position:absolute;
+  right:0;
+}
 .overlay
 {
   background:rgba(0,0,0,0.8);
