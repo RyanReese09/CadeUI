@@ -62,7 +62,6 @@ $("#login").submit(function(event) {
           window.location.href="http://www.codefundamentals.com/cadeui/dashboard";
         else
         {
-          $(".overlay").remove();
           $(".overlay").css("z-index","9997");
           $("#submit, #email, #password").prop("disabled", false);
           if(data.result[1]==="userpass")
