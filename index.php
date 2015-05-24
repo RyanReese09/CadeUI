@@ -6,8 +6,19 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <header id="top" data-scroll-index="0" role="banner">
   <div class="header-inner clearfix">
     <a href="/cadeui/" class="logo" title="Home" tabindex="1"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
+    <?php
+    if(isset($_SESSION["loggedin"]))
+    {
+      echo htmlspecialchars($_SESSION["firstname"]);
+    }
+    else
+    {
+    ?>
     <a href="/cadeui/register" class="register" title="Register" role="button" tabindex="3">Register</a>
     <a href="/cadeui/login" class="login" title="Login" role="button" tabindex="2">Login</a>
+    <?php
+    }
+    ?>
   </div>
   <nav class="top-nav" role="navigation">
     <input type="checkbox" class="hamburger" id="hamburger">
