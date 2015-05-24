@@ -55,6 +55,10 @@ header
   background:#153853;
   position:relative;
 }
+.header-inner
+{
+  text-align:right;
+}
 header .logo
 {
   float:left;
