@@ -14,8 +14,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     else
     {
     ?>
-    <a href="/cadeui/register" class="register button" title="Register" role="button" tabindex="3"><span>Register</span></a>
-    <a href="/cadeui/login" class="login button" title="Login" role="button" tabindex="2"><span>Login</span></a>
+    <a href="/cadeui/register" class="register button" title="Register" role="button" tabindex="2"><span>Register</span></a>
+    <a href="/cadeui/login" class="login button" title="Login" role="button" tabindex="3"><span>Login</span></a>
     <?php
     }
     ?>
