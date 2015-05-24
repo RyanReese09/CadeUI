@@ -63,6 +63,10 @@ header .logo
 {
   float:left;
 }
+header .register span, header .login span
+{
+  padding:10px 20px;
+}
 @media only screen and (max-width:550px)
 {
   .header-inner
@@ -73,10 +77,6 @@ header .logo
   {
     display:block;
     float:none;
-  }
-  header .register, header .login
-  {
-    padding:10px 20px;
   }
 }
 header .top-nav
