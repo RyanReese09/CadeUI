@@ -25,14 +25,6 @@ if(!isset($_SESSION["loggedin"]))
       }
     }
   }
-  else
-  {
-    if($page==="Dashboard")
-    {
-      header("Location: http://www.codefundamentals.com/cadeui/index");
-      exit();
-    }
-  }
 }
 else
 {
