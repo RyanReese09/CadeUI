@@ -15,7 +15,6 @@ $(".login").click(function(e){
   
   $('<div>').dialog({
     modal: true,
-    dialogClass: "login-ui-dialog",
     draggable: false,
     title: "Login",
     show: {effect: 'slide', duration: 300},
