@@ -63,6 +63,10 @@ header .logo
 {
   float:left;
 }
+header .register, header .login
+{
+  box-shadow:none;
+}
 header .register span, header .login span
 {
   padding:0.5rem 1rem;
