@@ -538,11 +538,11 @@ footer a:hover, footer a:active, footer a:focus
   position:fixed;
   max-width:440px;
 }
-.login-ui-dialog .ui-dialog-titlebar
+.ui-dialog-titlebar
 {
   background:#FF9A22;
 }
-.login-ui-dialog .ui-dialog-title
+.ui-dialog-title
 {
   color:#FFF;
 }
