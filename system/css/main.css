@@ -530,6 +530,10 @@ footer a:hover, footer a:active, footer a:focus
 {
   background:#FF9A22;
 }
+.login-ui-dialog .ui-dialog-title
+{
+  color:#FFF;
+}
 .overlay
 {
   background:rgba(0,0,0,0.8);
