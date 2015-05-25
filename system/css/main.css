@@ -59,6 +59,7 @@ h1
 .ui-dialog
 {
   z-index:9998;
+  position:fixed;
   max-width:440px;
 }
 .ui-dialog-titlebar
