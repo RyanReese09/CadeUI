@@ -67,6 +67,10 @@ header .register, header .login
 {
   box-shadow:none;
 }
+header .register:active, header .login:active
+{
+  box-shadow:none;
+}
 header .register:active span, header .login:active span
 {
   transform: translate(0, 2px);
