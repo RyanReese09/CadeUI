@@ -67,9 +67,14 @@ header .register, header .login
 {
   box-shadow:none;
 }
+header .register:active span, header .login:active span
+{
+  transform: translate(0, 2px);
+}
 header .register span, header .login span
 {
   padding:0.5rem 1rem;
+  font-size:0.8rem;
 }
 @media only screen and (max-width:550px)
 {
