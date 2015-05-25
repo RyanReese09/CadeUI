@@ -9,13 +9,13 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <?php
     if(isset($_SESSION["loggedin"]))
     {
-      echo "<a href=\"/cadeui/logout\" class=\"logout top-button\" title=\"Logout\" tabindex=\"2\"><span>Logout</span></a>";
+      echo "<a href=\"/cadeui/logout\" class=\"logout depressed-button\" title=\"Logout\" tabindex=\"2\"><span>Logout</span></a>";
     }
     else
     {
     ?>
-    <a href="/cadeui/register" class="register top-button" title="Register" role="button" tabindex="2"><span>Register</span></a>
-    <a href="/cadeui/login" class="login top-button" title="Login" role="button" tabindex="3"><span>Login</span></a>
+    <a href="/cadeui/register" class="register depressed-button" title="Register" role="button" tabindex="2"><span>Register</span></a>
+    <a href="/cadeui/login" class="login depressed-button" title="Login" role="button" tabindex="3"><span>Login</span></a>
     <?php
     }
     ?>
