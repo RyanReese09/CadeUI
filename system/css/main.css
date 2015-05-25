@@ -520,25 +520,7 @@ footer a:hover, footer a:active, footer a:focus
     margin:auto;
   }
 }
-.login-ui-dialog
-{
-  z-index:9998;
-  position:fixed;
-  max-width:440px;
-}
-.login-ui-dialog .ui-dialog-titlebar
-{
-  position:absolute;
-  right:0;
-  top:0;
-  width:100%;
-  background-color:#FF9A22;
-  padding:5px 0;
-}
-.login-ui-dialog .ui-dialog-title
-{
-  color:#FFF;
-}
+
 .overlay
 {
   background:rgba(0,0,0,0.8);
