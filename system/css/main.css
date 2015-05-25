@@ -687,6 +687,7 @@ footer a:hover, footer a:active, footer a:focus
 {
   background-color: #153853;
   border-radius: 5px;
+  font-size:1rem;
   vertical-align:bottom;
   color: #FFF;
   cursor: pointer;
