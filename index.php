@@ -35,7 +35,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="banner-why" role="contentinfo" aria-labelledby="whatiscadeui" aria-describedby="description">
   <h1 id="whatiscadeui">What is CadeUI?</h1>
   <h2 id="description">CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
-  <a href="#" class="new-cade-button" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
+  <a href="/cadeui/dashboard" class="new-cade-button" title="New Cade" role="button" tabindex="10"><span>New Cade</span></a>
 </div>
 <div class="getting-started -pop" id="getting-started" data-scroll-index="1" role="contentinfo" aria-labelledby="gettingstarted">
   <div class="gs-inner">
@@ -73,7 +73,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <div class="features-columns" aria-labelledby="featuresgalore">
       <img src="/cadeui/system/images/advantage-features.gif" width="125" height="125" alt="Many Features" class="scrollflow -pop -opacity">
       <h2 id="featuresgalore">Features-galore</h2>
-      <p>We are dedicated to providing the best experience for you. Have a feature request? <a href="/cadeui/contact" title="Contact" tabindex="11">Let us know!</a></p>
+      <p>We are dedicated to providing the best experience for you. Have a feature request? <a href="/cadeui/contact" title="Contact CadeUI" tabindex="11">Let us know!</a></p>
     </div>
     <div class="features-columns" aria-labelledby="dependability">
       <img src="/cadeui/system/images/advantage-dependable.gif" width="125" height="125" alt="Very Dependable" class="scrollflow -pop -opacity">
@@ -113,27 +113,27 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <section aria-labelledby="product">
       <h1 id="product">CadeUI</h1>
       <ul role="list">
-        <li><a href="#" title="fillinlater" tabindex="14">About</a></li>
-        <li><a href="#" title="fillinlater" tabindex="15">Feedback</a></li>
-        <li><a href="#" title="fillinlater" tabindex="16">Sitemap</a></li>
+        <li><a href="/cadeui/about" title="All about CadeUI" tabindex="14">About</a></li>
+        <li><a href="/cadeui/feedback" title="Leave Feedback" tabindex="15">Feedback</a></li>
+        <li><a href="/cadeui/sitemap" title="SiteMap" tabindex="16">Sitemap</a></li>
       </ul>
     </section>
     <section aria-labelledby="support">
       <h1 id="support">Support</h1>
       <ul role="list">
-        <li><a href="#" title="fillinlater" tabindex="17">Docs</a></li>
-        <li><a href="#" title="fillinlater" tabindex="18">Contact</a></li>
-        <li><a href="#" title="fillinlater" tabindex="19">Helpful Tips</a></li>
-        <li><a href="#" title="fillinlater" tabindex="20">F.A.Q.</a></li>
+        <li><a href="/cadeui/documentation" title="CadeUI Dcumentation" tabindex="17">Docs</a></li>
+        <li><a href="/cadeui/contact" title="Contact CadeUI" tabindex="18">Contact</a></li>
+        <li><a href="/cadeui/tips" title="Helpful Tips" tabindex="19">Helpful Tips</a></li>
+        <li><a href="/cadeui/faq" title="Frequently Asked Questions" tabindex="20">F.A.Q.</a></li>
       </ul>
     </section>
     <section aria-labelledby="misc">
       <h1 id="misc">Miscellaneous</h1>
       <ul role="list">
-        <li><a href="#" title="fillinlater" tabindex="21">Press</a></li>
-        <li><a href="#" title="fillinlater" tabindex="22">Terms</a></li>
-        <li><a href="#" title="fillinlater" tabindex="23">Privacy</a></li>
-        <li><a href="#" title="fillinlater" tabindex="24">Statistics</a></li>
+        <li><a href="/cadeui/press" title="Press Releases" tabindex="21">Press</a></li>
+        <li><a href="/cadeui/terms" title="Terms and Conditions" tabindex="22">Terms</a></li>
+        <li><a href="/cadeui/privacy" title="Privacy Policy" tabindex="23">Privacy</a></li>
+        <li><a href="/cadeui/statistics" title="CadeUI Statistics" tabindex="24">Statistics</a></li>
       </ul>
     </section>
   </div>
