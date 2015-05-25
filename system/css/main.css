@@ -520,7 +520,12 @@ footer a:hover, footer a:active, footer a:focus
     margin:auto;
   }
 }
-
+.login-ui-dialog
+{
+  z-index:9998;
+  position:fixed;
+  max-width:440px;
+}
 .overlay
 {
   background:rgba(0,0,0,0.8);
