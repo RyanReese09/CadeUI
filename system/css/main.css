@@ -532,10 +532,12 @@ footer a:hover, footer a:active, footer a:focus
   right:0;
   top:0;
   width:100%;
-  color:#FFF;
   background-color:#FF9A22;
-  text-align:right;
   padding:5px 0;
+}
+.login-ui-dialog .ui-dialog-title
+{
+  color:#FFF;
 }
 .overlay
 {
