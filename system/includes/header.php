@@ -52,6 +52,7 @@ else
 <meta charset="UTF-8">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"  type="text/css">
+<link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
 <link href="/cadeui/system/css/resets.css" type="text/css" rel="stylesheet">
 <link href="/cadeui/system/css/main.css" type="text/css" rel="stylesheet">
 </head>
