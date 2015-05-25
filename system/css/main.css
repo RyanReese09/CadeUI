@@ -10,7 +10,7 @@ h1
   font-size:1.8rem;
 }
 
-.button
+.new-cade-button
 {
   display: inline-block;
   position:relative;
@@ -19,7 +19,7 @@ h1
   text-transform: uppercase;
   box-shadow: 0px 3px rgba(128,128,128,1),0px 4px rgba(118,118,118,1),0px 5px rgba(108,108,108,1),0px 6px rgba(98,98,98,1),0px 7px rgba(88,88,88,1),0px 8px rgba(78,78,78,1),0px 14px 6px -1px rgba(128,128,128,1);
 } 
-.button span
+.new-cade-button span
 {
   background-color: #E8E8E8;
   color:#FF9A22;
@@ -30,17 +30,17 @@ h1
   padding:1rem 3rem;
   text-shadow: 0px 1px #fff, 0px -1px #DE9B4B;
 }
-.button span:hover
+.new-cade-button span:hover
 {
   color: #D47708;
   text-shadow: 0px -1px #B5701D;
   cursor: pointer;
 }
-.button:active
+.new-cade-button:active
 {
   box-shadow:0px 3px rgba(128,128,128,1),0px 4px rgba(118,118,118,1),0px 5px rgba(108,108,108,1),0px 6px rgba(98,98,98,1),0px 7px rgba(88,88,88,1),0px 8px rgba(78,78,78,1),0px 10px 2px 0px rgba(128,128,128,.6);
 }
-.button:active span
+.new-cade-button:active span
 {
   transform: translate(0, 5px);
 }
@@ -63,19 +63,19 @@ header .logo
 {
   float:left;
 }
-header .register, header .login
+header .top-button
 {
-  box-shadow:none;
+  display: inline-block;
+  position:relative;
+  border-radius: 10px;
+  margin:1rem 0 0.4rem 0;
+  text-transform: uppercase;
 }
-header .register:active, header .login:active
-{
-  box-shadow:none;
-}
-header .register:active span, header .login:active span
+header .top-button:active span
 {
   transform: translate(0, 2px);
 }
-header .register span, header .login span
+header .top-button span
 {
   padding:0.5rem 1rem;
   font-size:0.9rem;
