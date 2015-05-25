@@ -78,7 +78,7 @@ header .register:active span, header .login:active span
 header .register span, header .login span
 {
   padding:0.5rem 1rem;
-  font-size:0.8rem;
+  font-size:0.9rem;
 }
 @media only screen and (max-width:550px)
 {
