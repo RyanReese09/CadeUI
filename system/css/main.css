@@ -526,6 +526,10 @@ footer a:hover, footer a:active, footer a:focus
   position:fixed;
   max-width:440px;
 }
+.login-ui-dialog .ui-dialog-titlebar
+{
+  background:#FF9A22;
+}
 .overlay
 {
   background:rgba(0,0,0,0.8);
@@ -628,9 +632,7 @@ footer a:hover, footer a:active, footer a:focus
 }
 .login-wrapper #login
 {
-  box-shadow: 0px 0px 60px 10px #0E2436;
   background-color: #FFF;
-  border:1px solid grey;
   border-radius:7px;
   padding:30px 20px;
   overflow:hidden;
