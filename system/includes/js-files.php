@@ -10,6 +10,7 @@ if($page==="Homepage")
 <script type="text/javascript" src="/cadeui/system/js/scrollflow.js"></script>
 <script type="text/javascript" src="/cadeui/system/js/sticky.js"></script>
 <script type="text/javascript" src="/cadeui/system/js/scripts.js"></script>
+<script type="text/javascript" src="/cadeui/system/js/subscribers.js"></script>
 <?php
 }
 else if($page==="Login" && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')

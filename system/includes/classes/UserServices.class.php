@@ -143,5 +143,10 @@ class UserServices
     $resetAuthKey=$this->pdo->prepare("UPDATE Users SET authkey=:authkey WHERE id=:userid");
     $resetAuthKey->execute(array(":authkey" => bin2hex(openssl_random_pseudo_bytes(16)),":userid" => $userID));
   }
+  public function newSubscriber($email)
+  {
+    $subscriber=filter_var($email,FILTER_SANITIZE_EMAIL);
+    return array(true,"");
+  }
 }
 ?>

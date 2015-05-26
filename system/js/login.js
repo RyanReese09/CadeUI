@@ -52,8 +52,7 @@ $("#login").submit(function(event) {
       data: {
         'email': user,
         'password':pass,
-        'remember':remember,
-        'action':'login'
+        'remember':remember
       },
       url: "/cadeui/system/includes/process-login",
       success: function(data) {
