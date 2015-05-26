@@ -650,7 +650,6 @@ footer a:hover, footer a:active, footer a:focus
 {
   background-color: #FFF;
   border-radius:7px;
-  overflow:hidden;
 }
 .login-wrapper label, .login-wrapper span
 {
