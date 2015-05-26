@@ -536,7 +536,7 @@ header .hamburger+label::after
 .mailing-list label
 {
   display:table-cell;
-  vertical-align:middle;/*ie bug*/
+  vertical-align:top;/*ie bug*/
 }
 .mailing-list input
 {
