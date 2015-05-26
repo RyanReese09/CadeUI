@@ -797,11 +797,11 @@ span.error::before
 }
 input.error
 {
-  border-color:red;
+  border-color:red!important;
 }
 input.error:focus
 {
-  box-shadow:0px 0px 12px red;
+  box-shadow:0px 0px 12px red!important;
 }
 input.error.envelope
 {
@@ -813,11 +813,11 @@ input.error.envelope:focus
 }
 input.valid
 {
-  border-color:green;
+  border-color:green!important;
 }
 input.valid:focus
 {
-  box-shadow:0px 0px 12px green;
+  box-shadow:0px 0px 12px green!important;
 }
 input.valid.envelope
 {
@@ -826,7 +826,6 @@ input.valid.envelope
 input.valid.envelope:focus
 {
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
-  box-shadow:0px 0px 12px green;
 }
 input.error.lock
 {
@@ -835,16 +834,12 @@ input.error.lock
 input.error.lock:focus
 {
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
-  box-shadow:0px 0px 12px red;
 }
 input.valid.lock
 {
-  border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center, url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
 }
 input.valid.lock:focus
 {
-  border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
-  box-shadow:0px 0px 12px green;
 }
