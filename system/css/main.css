@@ -545,6 +545,7 @@ header .hamburger+label::after
   border-radius:5px;
   font-size:1.1rem;
   display:block;
+  margin-bottom:5px;
 }
 .mailing-list input[type=email]
 {
@@ -789,6 +790,10 @@ span.error
   margin:0;
   display:block;
   font-weight:bold;
+}
+span.error::before
+{
+  content:"*";
 }
 input.error.envelope
 {
