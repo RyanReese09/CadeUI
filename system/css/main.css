@@ -735,6 +735,10 @@ footer a:hover, footer a:active, footer a:focus
   overflow: hidden;
   text-align: justify;
   font-size:0;
+  /*IE-needed styles below*/
+  width:100%;
+  -ms-text-justify:distribute-all-lines;
+  text-justify:distribute-all-lines;
 }
 .login-wrapper .password-holder::after, .login-wrapper .submit-holder::after
 {
