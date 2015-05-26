@@ -779,56 +779,56 @@ footer a:hover, footer a:active, footer a:focus
 {
   text-decoration:underline;
 }
-.login-wrapper span.hide
+span.hide
 {
   text-indent:-999rem;
 }
-.login-wrapper span.error
+span.error
 {
   color:red;
   margin:0;
   display:block;
   font-weight:bold;
 }
-.login-wrapper input.error.envelope
+input.error.envelope
 {
   border-color:red;
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center, url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
 }
-.login-wrapper input.error.envelope:focus
+input.error.envelope:focus
 {
   border-color:red;
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
   box-shadow:0px 0px 12px red;
 }
-.login-wrapper input.valid.envelope
+input.valid.envelope
 {
   border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center, url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
 }
-.login-wrapper input.valid.envelope:focus
+input.valid.envelope:focus
 {
   border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
   box-shadow:0px 0px 12px green;
 }
-.login-wrapper input.error.lock
+input.error.lock
 {
   border-color:red;
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center, url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
 }
-.login-wrapper input.error.lock:focus
+input.error.lock:focus
 {
   border-color:red;
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
   box-shadow:0px 0px 12px red;
 }
-.login-wrapper input.valid.lock
+input.valid.lock
 {
   border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center, url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
 }
-.login-wrapper input.valid.lock:focus
+input.valid.lock:focus
 {
   border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
