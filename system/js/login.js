@@ -66,14 +66,13 @@ $("#login").submit(function(event) {
           $("#submit, #email, #password").prop("disabled", false);
           if(data.result[1]==="userpass")
           {
-            $("#password, #email").removeClass("valid");
             $("<span id=\"userpass-error\" class=\"error\">Error: Your username or password is incorrect. Please try again.</span>").prependTo("fieldset");
           }
           else if(data.result[1]==="attempts")
           {
-            $("#password, #email").removeClass("valid");
             $("<span id=\"attempts-error\" class=\"error\">Error: You have exceeded the maximum number of attempts. Please try again later.</span>").prependTo("fieldset");
           }
+          $("#password, #email").removeClass("valid");
         }
       }
     });
