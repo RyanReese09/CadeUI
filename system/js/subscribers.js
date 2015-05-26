@@ -1,3 +1,16 @@
+$("#subscribers").validate({
+  errorClass: "error",
+  errorElement: "span",
+  rules: {
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    email: "Please enter a valid email address"
+  }
+});
 $("#subscribers").submit(function(event) {
   event.preventDefault();
   if($("#subscribers").valid())
