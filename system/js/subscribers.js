@@ -16,13 +16,15 @@ $("#subscribers").submit(function(event) {
       success: function(data) {
         data = JSON.parse(data);
         if(data.result[0])
-          alert("fuckyeah");
-        else
         {
+          alert("fuckyeah");
+          console.log("fuckyeah");
           $(".overlay .loading-bar").remove();
           $(".overlay").css("z-index","9997");
           $("#subEmail, #subSubmit").prop("disabled", false);
         }
+        else
+          console.log("didn't work");
       }
     });
   }
