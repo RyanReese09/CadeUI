@@ -18,13 +18,13 @@ $("#subscribers").submit(function(event) {
         if(data.result[0])
         {
           alert("fuckyeah");
-          console.log("fuckyeah");
-          $(".overlay .loading-bar").remove();
-          $(".overlay").css("z-index","9997");
-          $("#subEmail, #subSubmit").prop("disabled", false);
         }
         else
+        {
           console.log("didn't work");
+        }
+        $("#subEmail, #subSubmit").prop("disabled", false);
+        $(".overlay").remove();
       }
     });
   }
