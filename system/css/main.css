@@ -795,36 +795,53 @@ span.error::before
 {
   content:"*";
 }
-input.error.envelope
+input.error
 {
   border-color:red;
+}
+input.error:focus
+{
+  box-shadow:0px 0px 12px red;
+}
+input.error.envelope
+{
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center, url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
 }
 input.error.envelope:focus
 {
-  border-color:red;
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
-  box-shadow:0px 0px 12px red;
+}
+input.valid
+{
+  border-color:green;
+}
+input.valid:focus
+{
+  box-shadow:0px 0px 12px green;
 }
 input.valid.envelope
 {
-  border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center, url(/cadeui/system/images/envelope.png) no-repeat 2px 50%;
 }
 input.valid.envelope:focus
 {
-  border-color:green;
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
   box-shadow:0px 0px 12px green;
 }
-input.error.lock
+input.error
 {
   border-color:red;
+}
+input.error:focus
+{
+  box-shadow:0px 0px 12px red;
+}
+input.error.lock
+{
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center, url(/cadeui/system/images/lock.png) no-repeat 2px 50%;
 }
 input.error.lock:focus
 {
-  border-color:red;
   background:url(/cadeui/system/images/error-x.png) no-repeat 98% center;
   box-shadow:0px 0px 12px red;
 }
