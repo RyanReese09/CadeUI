@@ -32,9 +32,16 @@ $("#subscribers").submit(function(event) {
         {
           alert("fuckyeah");
         }
-        else if(data.result[1]==="format")
+        else
         {
-          alert("format");
+          if(data.result[1]==="format")
+          {
+            alert("format");
+          }
+          else if(data.result[1]==="doubleentry")
+          {
+            alert("double");
+          }
         }
         $("#subEmail, #subSubmit").prop("disabled", false);
         $(".overlay").remove();
