@@ -435,6 +435,10 @@ header .hamburger+label::after
 .features-columns
 {
   margin:1rem;
+  -webkit-box-flex: 1 235px;
+  -moz-box-flex: 1 235px;
+  -webkit-flex: 1 235px;
+  -ms-flex: 1 235px;
   flex: 1 235px;
 }
 .banner-slogan img
