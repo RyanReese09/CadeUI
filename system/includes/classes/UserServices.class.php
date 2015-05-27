@@ -146,7 +146,10 @@ class UserServices
   public function newSubscriber($email)
   {
     $subscriber=filter_var($email,FILTER_SANITIZE_EMAIL);
-    return array($subscriber,"");
+    if($subscriber)
+      return array(true,"");
+    else
+      return array(false,"format");
   }
 }
 ?>
