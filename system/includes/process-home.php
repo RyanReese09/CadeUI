@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
   if(isset($_POST["login"]))
   {
-    $email=filter_input(INPUT_POST,"email");
+    $email=filter_input(INPUT_POST,"loginEmail");
     $password=filter_input(INPUT_POST,"password");
     $remember=filter_input(INPUT_POST,"remember");
     $formData=new UserServices($pdo);
@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   }
   else if(isset($_POST["subscribe"]))
   {
-    $email=filter_input(INPUT_POST,"email");
+    $email=filter_input(INPUT_POST,"subEmail");
     $formData=new UserServices($pdo);
     $isValid=$formData->newSubscriber($email);
   }

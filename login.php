@@ -18,7 +18,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
         echo "<span id=\"attempts-error\" class=\"error\">Error: You have exceeded the maximum number of attempts. Please try again later.</span>\n";
       ?>
 <label for="email">Username</label>
-      <input type="email" class="envelope" placeholder="Username" id="email" name="email">
+      <input type="email" class="envelope" placeholder="Username" id="email" name="loginEmail">
       <div class="password-holder">
         <label for="password">Password</label>
         <span class="showHide showPW remove">Show</span>
