@@ -39,7 +39,7 @@ $("#login").submit(function(event) {
   {
     $("body").append("<div class=\"overlay\"><div class=\"loading-bar\"><span></span><span></span><span></span><span></span><span></span></div></div>");
     $(".overlay").css("z-index","9999");
-    var user=$("#email").val();
+    var user=$("#email").val();alert(user);
     var pass=$("#password").val();
     if($("#remember").prop("checked"))
       var remember=true;
