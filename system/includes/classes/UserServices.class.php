@@ -11,7 +11,8 @@ class UserServices
   {
     if($this->hasLoginDelay())
     {
-      $username=filter_var($email,FILTER_SANITIZE_EMAIL);
+      //$username=filter_var($email,FILTER_SANITIZE_EMAIL);
+      $username=$email;
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
 
@@ -20,24 +21,24 @@ class UserServices
 
       if($findUser->rowCount()===0)
       {
-        $error="userpass2";
+        $error="userpass";
         return array(false,$error);
       }
       $userDetails=$findUser->fetch(PDO::FETCH_ASSOC);
-      /*if(password_verify($password,$userDetails["password"]))
+      if(password_verify($password,$userDetails["password"]))
       {
         if($remember)
           $this->setCookie($userDetails);
 
         $this->setSessions($userDetails,$this->findIP());
-        $this->resetAttempts();*/
+        $this->resetAttempts();
         return array(true,"");
-      /*}
+      }
       else
       {
         $error="userpass";
         return array(false,$error);
-      }*/
+      }
     }
     else
     {
