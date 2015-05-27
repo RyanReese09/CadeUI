@@ -12,12 +12,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $isValid=$formData->checkCredentials($email,$password,$remember);
     $setcookie("wtf","ok its in here", time() + (86400 * 30), "/");
   }
-  /*else if(isset($_POST["subscribe"]))
-  {
-    $email=filter_input(INPUT_POST,"subEmail");
-    $formData=new UserServices($pdo);
-    $isValid=$formData->newSubscriber($email);
-  }*/
   $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
   if($isAjax)
   {
@@ -26,19 +20,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     exit(json_encode($result));
   }
   
-  if(isset($_POST["login"]))
-  {
-    if($isValid[0])
-      header("Location: http://www.codefundamentals.com/cadeui/dashboard");
-    else
-      header("Location: http://www.codefundamentals.com/cadeui/login?error=$isValid[1]");
-  }
-  else if(isset($_POST["subscribe"]))
-  {
-    if($isValid[0])
-      header("Location: http://www.codefundamentals.com/cadeui/index#newsletter#newsletter?result=success");
-    else
-      header("Location: http://www.codefundamentals.com/cadeui/index#newsletter?error=$isValid[1]");
-  }
+  if($isValid[0])
+    header("Location: http://www.codefundamentals.com/cadeui/dashboard");
+  else
+    header("Location: http://www.codefundamentals.com/cadeui/login?error=$isValid[1]");
 }
 ?>
