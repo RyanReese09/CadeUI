@@ -5,12 +5,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
   if(isset($_POST["form"]) && $_POST["form"]==="login")
   {
-    $email="admin@codefundamentals.com";
-    //$email=filter_input(INPUT_POST,"loginEmail");
+    $email=filter_input(INPUT_POST,"loginEmail");
     $password=filter_input(INPUT_POST,"password");
     $remember=filter_input(INPUT_POST,"remember");
     $formData=new UserServices($pdo);
     $isValid=$formData->checkCredentials($email,$password,$remember);
+    $setcookie("wtf","ok its in here", time() + (86400 * 30), "/");
   }
   /*else if(isset($_POST["subscribe"]))
   {
