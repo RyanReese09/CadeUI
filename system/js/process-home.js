@@ -56,7 +56,7 @@ $("#login").submit(function(event) {
       },
       url: "/cadeui/system/includes/process-home",
       success: function(data) {
-        data = JSON.parse(data);alert(data.result[1]);
+        data = JSON.parse(data);alert(data);
         if(data.result[0])
         {
           window.location.href="http://www.codefundamentals.com/cadeui/dashboard";
