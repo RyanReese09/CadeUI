@@ -145,7 +145,7 @@ class UserServices
   }
   public function newSubscriber($email)
   {
-    $subscriber=filter_var($email,FILTER_SANITIZE_EMAIL);
+    $subscriber=filter_var($email, FILTER_VALIDATE_EMAIL);
     if($subscriber)
       return array(true,"");
     else
