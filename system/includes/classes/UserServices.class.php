@@ -24,20 +24,20 @@ class UserServices
         return array(false,$error);
       }
       $userDetails=$findUser->fetch(PDO::FETCH_ASSOC);
-      if(password_verify($password,$userDetails["password"]))
+      /*if(password_verify($password,$userDetails["password"]))
       {
         if($remember)
           $this->setCookie($userDetails);
 
         $this->setSessions($userDetails,$this->findIP());
-        $this->resetAttempts();
+        $this->resetAttempts();*/
         return array(true,"");
-      }
+      /*}
       else
       {
         $error="userpass";
         return array(false,$error);
-      }
+      }*/
     }
     else
     {
