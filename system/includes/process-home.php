@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
   if(true)
   {
-    $email=filter_var($_POST["loginEmail"], FILTER_VALIDATE_EMAIL);
+    $email=$_POST["loginEmail"];
     setcookie("test",$email,50000,"/");
     $password=filter_input(INPUT_POST,"password");
     $remember=filter_input(INPUT_POST,"remember");
