@@ -11,8 +11,7 @@ class UserServices
   {
     if($this->hasLoginDelay())
     {
-      //$username=filter_var($email,FILTER_SANITIZE_EMAIL);
-      $username="admin@codefundamentals.com";
+      $username=filter_var($email,FILTER_SANITIZE_EMAIL);
       
       $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
 $txt = $username;
