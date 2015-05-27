@@ -9,7 +9,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 }
 ?>
 <div class="login-wrapper">
-  <form method="post" action="/cadeui/system/includes/process-login" id="login" name="login">
+  <form method="post" action="/cadeui/system/includes/process-home" id="login" name="login">
     <fieldset>
       <?php
       if(isset($_GET["error"]) && $_GET["error"]==="userpass")
@@ -29,7 +29,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
           <label class="remember-me"><input type="checkbox" name="remember" id="remember" value="yes">Remember Me</label>
           <a href="#" class="forgotpw">I forgot my password...</a>
         </div>
-        <input type="submit" id="submit" value="Login">
+        <input type="submit" id="submit" value="Login" name="login">
       </div>
      </fieldset>
   </form>
