@@ -3,7 +3,7 @@ session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/bootstrap.php");
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
-  if(isset($_POST["login"]))
+  if(isset($_POST["form"]) && $_POST["form"]==="login")
   {
     $email="admin@codefundamentals.com";
     //$email=filter_input(INPUT_POST,"loginEmail");
