@@ -55,7 +55,7 @@ $("#login").submit(function(event) {
         'remember':remember
       },
       url: "/cadeui/system/includes/process-home",
-      success: function(data) {
+      success: function(data) {alert(data);
         data = JSON.parse(data);alert(data);
         if(data.result[0])
         {
