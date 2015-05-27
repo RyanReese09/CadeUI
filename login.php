@@ -9,7 +9,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 }
 ?>
 <div class="login-wrapper">
-  <form method="post" action="/cadeui/system/includes/process-home" id="login" name="login">
+  <form method="post" action="/cadeui/system/includes/process-home" id="login">
     <fieldset>
       <?php
       if(isset($_GET["error"]) && $_GET["error"]==="userpass")
