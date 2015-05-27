@@ -427,6 +427,7 @@ header .hamburger+label::after
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap:wrap;
   flex-wrap: wrap;
   justify-content:space-around;
   margin-top:1rem;
