@@ -30,7 +30,7 @@ $("#subscribers").submit(function(event) {
         data = JSON.parse(data);
         if(data.result[0])
         {
-          alert("fuckyeah");
+          alert("fuckyeah");//all good
         }
         else
         {
