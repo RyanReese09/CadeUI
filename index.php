@@ -102,7 +102,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 </div>
 <div class="mailing-list" data-scroll-index="4" id="newsletter" role="contentinfo" aria-labelledby="newslettersignup">
   <h1 id="newslettersignup">Newsletter Signup</h1>
-  <form action="/cadeui/system/process-subscribers" method="post" id="subscribers">
+  <form action="/cadeui/system/includes/process-subscribers" method="post" id="subscribers">
     <label><input type="email" placeholder="E-mail" name="email" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup">
     <?php
       if(isset($_GET["error"]) && $_GET["error"]==="format")
