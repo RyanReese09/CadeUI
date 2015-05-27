@@ -48,7 +48,6 @@ $("#login").submit(function(event) {
     $("#submit, #email, #password").prop("disabled", true);
     $.ajax({
       type: "POST",
-      dataType: "text",
       data: {
         'email': user,
         'password':pass,
@@ -56,7 +55,7 @@ $("#login").submit(function(event) {
       },
       url: "/cadeui/system/includes/process-home",
       success: function(data) {
-        data = JSON.parse(data);alert(data.result[0]);
+        data = JSON.parse(data);
         if(data.result[0])
           window.location.href="http://www.codefundamentals.com/cadeui/dashboard";
         else
