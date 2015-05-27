@@ -13,10 +13,14 @@ class UserServices
     {
       //$username=filter_var($email,FILTER_SANITIZE_EMAIL);
       $username="admin@codefundamentals.com";
-      mail("sportsdude.reese@gmail.com","test",$username);
+      
+      $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = $username;
+fwrite($myfile, $txt);
+fclose($myfile);
+
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
-mail("sportsdude.reese@gmail.com","My subject",$username." ".$password." ".$remember);
       $findUser=$this->pdo->prepare("SELECT * FROM Users WHERE username=:username");
       $findUser->execute(array(":username" => $username));
 
