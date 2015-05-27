@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
   if($isAjax)
   {
-    $result=["result" => $isValid];
+    $result=['result' => $isValid];
     header("Content-Type: application/json");
     exit(json_encode($result));
   }
