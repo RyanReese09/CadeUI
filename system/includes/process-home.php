@@ -10,7 +10,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $remember=filter_input(INPUT_POST,"remember");
     $formData=new UserServices($pdo);
     $isValid=$formData->checkCredentials($email,$password,$remember);
-    $setcookie("wtf","ok its in here", time() + (86400 * 30), "/");
   }
   $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
   if($isAjax)
