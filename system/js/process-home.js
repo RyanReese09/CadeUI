@@ -45,7 +45,7 @@ $("#login").submit(function(event) {
       var remember=true;
     else
       var remember=false;
-    $("#submit, #email, #password").prop("disabled", true);alert(user);alert(pass);
+    $("#submit, #email, #password").prop("disabled", true);
     $.ajax({
       type: "POST",
       dataType: "text",
@@ -54,7 +54,7 @@ $("#login").submit(function(event) {
         'password':pass,
         'remember':remember
       },
-      url: "/cadeui/system/includes/process-home",
+      url: "/cadeui/system/includes/process-home.php",
       success: function(data) {
         data = JSON.parse(data);alert(data.result);
         if(data.result[0])
