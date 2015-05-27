@@ -20,7 +20,7 @@ class UserServices
 
       if($findUser->rowCount()===0)
       {
-        $error="userpass";
+        $error="userpass2";
         return array(false,$error);
       }
       $userDetails=$findUser->fetch(PDO::FETCH_ASSOC);
