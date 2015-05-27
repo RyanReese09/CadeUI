@@ -103,7 +103,14 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="mailing-list" data-scroll-index="4" id="newsletter" role="contentinfo" aria-labelledby="newslettersignup">
   <h1 id="newslettersignup">Newsletter Signup</h1>
   <form action="/cadeui/system/process-subscribers" method="post" id="subscribers">
-    <label><input type="email" placeholder="E-mail" name="email" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup"></label>
+    <label><input type="email" placeholder="E-mail" name="email" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup">
+    <?php
+      if(isset($_GET["error"]) && $_GET["error"]==="format")
+        echo "<span class=\"error\">Error: Please enter an e-mail address. Please try again.</span>\n";
+      else if(isset($_GET["error"]) && $_GET["error"]==="doubleentry")
+        echo "<span id=\"attempts-error\" class=\"error\">Error: You are already subscribed! No need to subscribe again.</span>\n";
+    ?>
+    </label>
     <label><input type="submit" value="Submit" name="submit" id="subSubmit" tabindex="13"></label>
   </form>
 </div>
