@@ -147,7 +147,12 @@ class UserServices
   {
     $subscriber=filter_var($email, FILTER_VALIDATE_EMAIL);
     if($subscriber)
-      return array(true,"");
+    {
+      if(true)//double entry?
+        return array(true,"");
+      else
+        return array(false,"doubleentry");
+    }
     else
       return array(false,"format");
   }
