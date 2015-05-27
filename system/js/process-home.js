@@ -48,6 +48,7 @@ $("#login").submit(function(event) {
     $("#submit, #email, #password").prop("disabled", true);
     $.ajax({
       type: "POST",
+      dataType: "text",
       data: {
         'email': user,
         'password':pass,
