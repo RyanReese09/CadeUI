@@ -54,7 +54,7 @@ $("#login").submit(function(event) {
         'password':pass,
         'remember':remember
       },
-      url: "/cadeui/system/includes/process-login",
+      url: "/cadeui/system/includes/process-home",
       success: function(data) {
         data = JSON.parse(data);
         if(data.result[0])
