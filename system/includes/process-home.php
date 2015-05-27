@@ -25,7 +25,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     exit(json_encode($result));
   }
   
-  if(isset($_POST["subscribe"]))
+  if(isset($_POST["login"]))
   {
     if($isValid[0])
       header("Location: http://www.codefundamentals.com/cadeui/dashboard");
