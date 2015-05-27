@@ -40,6 +40,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       header("Location: http://www.codefundamentals.com/cadeui/index#newsletter?error=$isValid[1]");
   }
 }
-else
-    header("Location: http://www.codefundamentals.com/cadeui/login");
 ?>
