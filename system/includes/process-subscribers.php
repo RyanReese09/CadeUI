@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     exit(json_encode($result));
   }
   if($isValidEmail[0])
-    header("Location: http://www.codefundamentals.com/cadeui/index#newsletter");
+    header("Location: http://www.codefundamentals.com/cadeui/index#newsletter?wtf=$isValidEmail[0]");
   else
     header("Location: http://www.codefundamentals.com/cadeui/index#newsletter?error=$isValidEmail[1]");
 }
