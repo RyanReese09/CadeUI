@@ -18,14 +18,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $isValid=$formData->newSubscriber($email);
   }
   $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
- // if($isAjax)
- // {
-    $result=["result" => $isValid];
-   // header("Content-Type: application/json");
-  //  exit(json_encode($result));
-  //}
-  echo var_dump(json_encode($result));
-  /*if(isset($_POST["login"]))
+  if($isAjax)
+  {
+    $result=['result' => $isValid];
+    header("Content-Type: application/json");
+    exit(json_encode($result));
+  }
+  
+  if(isset($_POST["login"]))
   {
     if($isValid[0])
       header("Location: http://www.codefundamentals.com/cadeui/dashboard");
@@ -38,6 +38,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       header("Location: http://www.codefundamentals.com/cadeui/index#newsletter#newsletter?result=success");
     else
       header("Location: http://www.codefundamentals.com/cadeui/index#newsletter?error=$isValid[1]");
-  }*/
+  }
 }
 ?>
