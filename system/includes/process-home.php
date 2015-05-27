@@ -5,7 +5,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
   if(true)
   {
-    $email=filter_input(INPUT_POST,"loginEmail");
+    //$email=filter_input(INPUT_POST,"loginEmail");
+    $email="admin@codefundamentals.com";
     $password=filter_input(INPUT_POST,"password");
     $remember=filter_input(INPUT_POST,"remember");
     $formData=new UserServices($pdo);
