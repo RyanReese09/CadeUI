@@ -184,13 +184,9 @@ header .user-links:visited
 {
   color:rgba(255,255,255,0.7);
 }
-header .user-links:hover
+header .user-links:hover, header .user-links:active, header.user-links:focus
 {
   text-decoration:underline;
-}
-header .user-links:active, header.user-links:focus
-{
-  
 }
 @media only screen and (max-width:550px)
 {
