@@ -45,12 +45,12 @@ $("#login").submit(function(event) {
       var remember=true;
     else
       var remember=false;
-    $("#submit, #email, #password").prop("disabled", true);
+    $("#submit, #loginEmail, #password").prop("disabled", true);
     $.ajax({
       type: "POST",
       dataType: "text",
       data: {
-        'email': user,
+        'loginEmail': user,
         'password':pass,
         'remember':remember
       },
