@@ -12,13 +12,6 @@ class UserServices
     if($this->hasLoginDelay())
     {
       $username=filter_var($email,FILTER_SANITIZE_EMAIL);
-
-
-      $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = $email;
-fwrite($myfile, $txt);
-fclose($myfile);
-
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
       $findUser=$this->pdo->prepare("SELECT * FROM Users WHERE username=:username");
@@ -26,7 +19,7 @@ fclose($myfile);
 
       if($findUser->rowCount()===0)
       {
-        $error="userpass2";
+        $error="userpass";
         return array(false,$error);
       }
       $userDetails=$findUser->fetch(PDO::FETCH_ASSOC);
