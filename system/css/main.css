@@ -177,6 +177,7 @@ header .user-links
   text-transform:uppercase;
   font-weight:bold;
   text-decoration:none;
+  margin:0.5rem;
 }
 header .user-links:visited
 {
