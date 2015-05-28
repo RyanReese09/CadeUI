@@ -176,6 +176,19 @@ header .user-links
   color:#FFF;
   text-transform:uppercase;
   font-weight:bold;
+  text-decoration:none;
+}
+header .user-links:visited
+{
+  text-decoration:underline;
+}
+header .user-links:hover
+{
+  color:rgba(255,255,255,0.7);
+}
+header .user-links:active, header.user-links:focus
+{
+  
 }
 @media only screen and (max-width:550px)
 {
