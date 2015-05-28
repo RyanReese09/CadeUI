@@ -6,7 +6,7 @@ $("#login").validate({
       required: true,
       minlength: 5
     },
-    email: {
+    loginEmail: {
       required: true,
       email: true
     }
@@ -16,20 +16,20 @@ $("#login").validate({
       required: "Please provide a password",
       minlength: "Your password must be at least 5 characters long"
     },
-    email: "Please enter a valid email address"
+    loginEmail: "Please enter a valid email address"
   }
 });
 $("#subscribers").validate({
   errorClass: "error",
   errorElement: "span",
   rules: {
-    email: {
+    subEmail: {
       required: true,
       email: true
     }
   },
   messages: {
-    email: "*Error: Please enter an e-mail address. Please try again."
+    subEmail: "*Error: Please enter an e-mail address. Please try again."
   }
 });
 $(".showHide").click(function() {
