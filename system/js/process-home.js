@@ -19,6 +19,19 @@ $("#login").validate({
     email: "Please enter a valid email address"
   }
 });
+$("#subscribers").validate({
+  errorClass: "error",
+  errorElement: "span",
+  rules: {
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    email: "*Error: Please enter an e-mail address. Please try again."
+  }
+});
 $(".showHide").click(function() {
   $(".showHide").toggleClass("showPW").toggleClass("hidePW");
   if($(".showHide").text()==="Show")
