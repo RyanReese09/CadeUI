@@ -53,6 +53,6 @@ $("#subscribers").validate({
     }
   },
   messages: {
-    subEmail: "*Error: Please enter an e-mail address. Please try again."
+    subEmail: "Error: Please enter an e-mail address. Please try again."
   }
 });
