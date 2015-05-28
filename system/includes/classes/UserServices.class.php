@@ -13,10 +13,11 @@ class UserServices
     {
       $username=filter_var($email,FILTER_SANITIZE_EMAIL);
       
-      $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+      if($username)
+      {$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
 $txt = $username;
 fwrite($myfile, $txt);
-fclose($myfile);
+fclose($myfile);}
 
       $password=filter_var($pass,FILTER_SANITIZE_STRING);
       $remember=filter_var($remember,FILTER_VALIDATE_BOOLEAN);
