@@ -352,7 +352,7 @@ header .hamburger+label::after
 }
 .banner-why
 {
-  background: #e8e8e8 url(/cadeui/system/images/banner-faded.jpg) no-repeat;
+  background: #e8e8e8 url(/cadeui/system/images/code-languages.png) no-repeat;
   background-size:cover;
   padding:3rem 0;
   text-align:center;
