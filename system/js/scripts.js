@@ -43,3 +43,16 @@ var navH=-($(".top-nav").height());
 $.scrollIt({
   topOffset: navH
 });
+$("#subscribers").validate({
+  errorClass: "error",
+  errorElement: "span",
+  rules: {
+    subEmail: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    subEmail: "*Error: Please enter an e-mail address. Please try again."
+  }
+});

@@ -19,19 +19,6 @@ $("#login").validate({
     loginEmail: "Please enter a valid email address"
   }
 });
-$("#subscribers").validate({
-  errorClass: "error",
-  errorElement: "span",
-  rules: {
-    subEmail: {
-      required: true,
-      email: true
-    }
-  },
-  messages: {
-    subEmail: "*Error: Please enter an e-mail address. Please try again."
-  }
-});
 $(".showHide").click(function() {
   $(".showHide").toggleClass("showPW").toggleClass("hidePW");
   if($(".showHide").text()==="Show")
