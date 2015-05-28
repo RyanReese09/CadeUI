@@ -15,7 +15,7 @@ class UserServices
 
 
       $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = $username;
+$txt = $email;
 fwrite($myfile, $txt);
 fclose($myfile);
 
