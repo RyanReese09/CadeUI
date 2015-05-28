@@ -10,14 +10,14 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     if(isset($_SESSION["loggedin"]))
     {
     ?>
-    <a href="/cadeui/logout" class="logout depressed-button" title="Logout" tabindex="2"><span>Logout</span></a>
+    <a href="/cadeui/logout" class="logout user-links" title="Logout" tabindex="2"><span>Logout</span></a>
     <?php
     }
     else
     {
     ?>
-    <a href="/cadeui/register" class="register depressed-button" title="Register" role="button" tabindex="2"><span>Register</span></a>
-    <a href="/cadeui/login" class="login depressed-button" title="Login" role="button" tabindex="3"><span>Login</span></a>
+    <a href="/cadeui/register" class="register user-links" title="Register" role="button" tabindex="2"><span>Register</span></a>
+    <a href="/cadeui/login" class="login user-links" title="Login" role="button" tabindex="3"><span>Login</span></a>
     <?php
     }
     ?>
