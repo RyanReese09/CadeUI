@@ -180,11 +180,11 @@ header .user-links
 }
 header .user-links:visited
 {
-  text-decoration:underline;
+  color:rgba(255,255,255,0.7);
 }
 header .user-links:hover
 {
-  color:rgba(255,255,255,0.7);
+  text-decoration:underline;
 }
 header .user-links:active, header.user-links:focus
 {
