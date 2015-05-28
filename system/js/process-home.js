@@ -65,7 +65,7 @@ $("#login").submit(function(event) {
         {
           $(".overlay .loading-bar").remove();
           $(".overlay").css("z-index","9997");
-          $("#submit, #email, #password").prop("disabled", false);
+          $("#submit, #loginEmail, #password").prop("disabled", false);
           if(data.result[1]==="userpass")
           {
             $("<span id=\"userpass-error\" class=\"error\">Error: Your username or password is incorrect. Please try again.</span>").prependTo("fieldset");
@@ -74,7 +74,7 @@ $("#login").submit(function(event) {
           {
             $("<span id=\"attempts-error\" class=\"error\">Error: You have exceeded the maximum number of attempts. Please try again later.</span>").prependTo("fieldset");
           }
-          $("#password, #email").removeClass("valid");
+          $("#password, #loginEmail").removeClass("valid");
         }
       }
     });
