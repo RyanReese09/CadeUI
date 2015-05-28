@@ -39,7 +39,7 @@ $("#login").submit(function(event) {
   {
     $("body").append("<div class=\"overlay\"><div class=\"loading-bar\"><span></span><span></span><span></span><span></span><span></span></div></div>");
     $(".overlay").css("z-index","9999");
-    var user=$("#email").val();alert(user);
+    var user=$("#email").val();
     var pass=$("#password").val();
     if($("#remember").prop("checked"))
       var remember=true;
@@ -56,7 +56,7 @@ $("#login").submit(function(event) {
       },
       url: "/cadeui/system/includes/process-home",
       success: function(data) {
-        data = JSON.parse(data);
+        data = JSON.parse(data);alert(data[0]);alert(data[1]);
         if(data.result[0])
         {
           window.location.href="http://www.codefundamentals.com/cadeui/dashboard";
