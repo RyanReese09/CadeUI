@@ -353,7 +353,7 @@ header .hamburger+label::after
 .banner-why
 {
   background: #e8e8e8;
-  padding:3rem 0;
+  padding:1rem 0 3rem;
   text-align:center;
 }
 .banner-inner
