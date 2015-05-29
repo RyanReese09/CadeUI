@@ -147,8 +147,15 @@ class UserServices
     $subscriber=filter_var($email, FILTER_VALIDATE_EMAIL);
     if($subscriber)
     {
-      if(true)//double entry?
+      $findSub=$this->pdo->prepare("SELECT * FROM Subscribers WHERE email=:email");
+      $findSub->execute(array(":email" => $subscriber));
+
+      if($findSub->rowCount()===0)
+      {
+        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email) VALUES (:email)");
+        $insertSub->execute(array(":email" => $subscriber));
         return array(true,"");
+      }
       else
         return array(false,"doubleentry");
     }
