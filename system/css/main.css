@@ -354,7 +354,7 @@ header .hamburger+label::after
 .banner-why
 {
   background: #FFF;
-  padding:1rem 0 3rem;
+  padding:1rem 0;
   text-align:center;
 }
 .banner-inner
@@ -389,6 +389,10 @@ header .hamburger+label::after
   .banner-inner, .banner-why img, .banner-why .banner-text
   {
     display:block;
+  }
+  .banner-why .banner-text
+  {
+    margin-bottom:10px;
   }
 }
 .getting-started
