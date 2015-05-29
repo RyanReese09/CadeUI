@@ -152,7 +152,7 @@ h1
   0%{opacity:0.1;}
   100%{opacity:1;}
 }
-.header-inner, .features-inner, .gs-inner, .footer-inner, .testimonials-inner
+.header-inner, .features-inner, .gs-inner, .footer-inner, .testimonials-inner, .banner-inner
 {
   max-width:1000px;
   padding:0 1rem;
@@ -356,21 +356,33 @@ header .hamburger+label::after
   padding:3rem 0;
   text-align:center;
 }
+.banner-inner
+{
+  display:table;
+  table-layout:fixed;
+  width:100%;
+}
+.banner-why img
+{
+  display:table-cell;
+}
+.banner-why .banner-text
+{
+  display:table-cell;
+}
 .banner-why h1
 {
   font-size:3rem;
   color: #FFF;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin:1rem auto;
-  max-width:1000px;
+  margin:1rem 0;
 }
 .banner-why h2
 {
   font-size:1.5rem;
   color: #FFF;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin:1rem auto;
-  max-width:800px;
+  margin:1rem 0;
 }
 .getting-started
 {
