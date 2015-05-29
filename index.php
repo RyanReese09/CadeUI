@@ -116,7 +116,6 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
         echo "<span id=\"attempts-error\" class=\"error\">*Error: You are already subscribed</span>\n";
     ?>
     </label>
-    <input type="hidden" name="hiddensubscribe" value="sub">
     <label><input type="submit" value="Submit" name="subscribe" id="subSubmit" tabindex="13"></label>
   </form>
 </div>

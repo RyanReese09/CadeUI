@@ -3,7 +3,7 @@ session_start();
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/bootstrap.php");
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
-  if(isset($_POST["hiddenlogin"]))
+  if(isset($_POST["loginEmail"]))
   {
     $email=filter_input(INPUT_POST,"loginEmail");
     $password=filter_input(INPUT_POST,"password");
@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $formData=new UserServices($pdo);
     $isValid=$formData->checkCredentials($email,$password,$remember);
   }
-  else if(isset($_POST["hiddensubscribe"]))
+  else if(isset($_POST["subEmail"]))
   {
     $email=filter_input(INPUT_POST,"subEmail");
     $formData=new UserServices($pdo);

@@ -29,7 +29,6 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
           <label class="remember-me"><input type="checkbox" name="remember" id="remember" value="yes">Remember Me</label>
           <a href="#" class="forgotpw">I forgot my password...</a>
         </div>
-        <input type="hidden" name="hiddenlogin" value="log">
         <input type="submit" id="submit" value="Login" name="login">
       </div>
      </fieldset>
