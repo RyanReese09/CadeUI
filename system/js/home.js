@@ -52,11 +52,11 @@ $("#subscribers").submit(function(event) {
           $("#subEmail").prop("disabled", false);
           if(data.result[1]==="doubleentry")
           {
-            $("<span id=\"attempts-error\" class=\"error\">*Error: You are already subscribed</span>").prependTo("#subscribers");
+            $("<span id=\"attempts-error\" class=\"error\">*Error: You are already subscribed</span>").appendTo("#subscribers");
           }
           else if(data.result[1]==="format")
           {
-            $("<span class=\"error\">*Error: Please enter an e-mail address</span>").prependTo("#subscribers");
+            $("<span class=\"error\">*Error: Please enter an e-mail address</span>").appendTo("#subscribers");
           }
           $("#subEmail").removeClass("valid");
         }
