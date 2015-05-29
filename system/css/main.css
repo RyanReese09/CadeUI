@@ -882,4 +882,5 @@ input.valid.lock:focus
   background-color:lime;
   border-radius:1rem;
   text-align:center;
+  display:none;
 }
