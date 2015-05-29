@@ -46,6 +46,7 @@ $("#subscribers").submit(function(event) {
         {
           $(".overlay").remove();
           $("#subscribers").fadeOut(1000);
+          $("<p class=\"success-message\">Congrats</p>").appendTo("#newsletter");
         }
         else
         {

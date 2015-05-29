@@ -877,3 +877,9 @@ input.valid.lock:focus
 {
   background:url(/cadeui/system/images/success-checkmark.png) no-repeat 98% center;
 }
+.success-message
+{
+  background-color:lime;
+  border-radius:1rem;
+  text-align:center;
+}

@@ -107,6 +107,10 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 </div>
 <div class="mailing-list" data-scroll-index="4" id="newsletter" role="contentinfo" aria-labelledby="newslettersignup">
   <h1 id="newslettersignup">Newsletter Signup</h1>
+  <?php
+  if(!isset($_GET["result"]))
+  {
+  ?>
   <form action="/cadeui/system/includes/process-home" method="post" id="subscribers">
     <label><input type="email" placeholder="E-mail" name="subEmail" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup">
     <?php
@@ -118,6 +122,13 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     </label>
     <label><input type="submit" value="Submit" name="subscribe" id="subSubmit" tabindex="13"></label>
   </form>
+  <?php
+  }
+  else if($_GET["result"]==="subscribed")
+  {
+    echo "<p class=\"success-message\">Congrats!</p>";
+  }
+  ?>
 </div>
 <footer role="contentinfo">
   <div class="footer-inner">
