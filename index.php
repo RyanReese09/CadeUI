@@ -59,8 +59,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     </ul>
   </div>
 </div>
-<div class="features-wrapper" id="features" data-scroll-index="2" role="contentinfo" aria-labelledby="features">
-  <h1 id="features">Why use CadeUI?</h1>
+<div class="features-wrapper" id="features" data-scroll-index="2" role="contentinfo" aria-labelledby="features-title">
+  <h1 id="features-title">Why use CadeUI?</h1>
   <div class="features-inner">
     <div class="features-columns" aria-labelledby="nosetup">
       <img src="/cadeui/system/images/advantage-nosetup.gif" width="125" height="125" alt="No Setup Required" class="scrollflow -pop -opacity">
@@ -97,9 +97,9 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 <div class="banner-slogan" role="contentinfo">
   <img src="/cadeui/system/images/cat-music-banner.png" alt="Code is like music to my ears" width="2000" height="500">
 </div>
-<div class="testimonials" id="testimonials" data-scroll-index="3" role="contentinfo" aria-labelledby="testimonials">
+<div class="testimonials" id="testimonials" data-scroll-index="3" role="contentinfo" aria-labelledby="testimonials-title">
   <div class="testimonials-inner">
-    <h1 id="testimonials">Developers Love Us</h1>
+    <h1 id="testimonials-title">Developers Love Us</h1>
     <blockquote class="scrollflow -slide-right -opacity" cite="">why the fug are you quoting me? Get the fug out of my face. No don't make that a quote. Stupid nerd</blockquote>
     <blockquote class="scrollflow -pop -opacity" cite="">why the fug are you quoting me? Get the fug out of my face. No don't make that a quote. Stupid nerd</blockquote>
     <blockquote class="scrollflow -slide-left -opacity" cite="">why the fug are you quoting me? Get the fug out of my face. No don't make that a quote. Stupid nerd</blockquote>
