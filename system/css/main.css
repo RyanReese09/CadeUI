@@ -369,18 +369,17 @@ header .hamburger+label::after
 .banner-why .banner-text
 {
   display:table-cell;
+  vertical-align:top;
 }
 .banner-why h1
 {
   font-size:3rem;
-  color: #FFF;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin:1rem 0;
 }
 .banner-why h2
 {
   font-size:1.5rem;
-  color: #FFF;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin:1rem 0;
 }
