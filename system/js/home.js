@@ -25,3 +25,43 @@ $("#subscribers").validate({
     subEmail: "Error: Please enter a valid e-mail address"
   }
 });
+$("#subscribers").submit(function(event) {
+  event.preventDefault();
+  if($("#subscribers").valid())
+  {
+    $("body").append("<div class=\"overlay\"><div class=\"loading-bar\"><span></span><span></span><span></span><span></span><span></span></div></div>");
+    $(".overlay").css("z-index","9999");
+    var email=$("#subEmail").val();
+    $("#subEmail").prop("disabled", true);
+    $.ajax({
+      type: "POST",
+      dataType: "text",
+      data: {
+        'subEmail': email
+      },
+      url: "/cadeui/system/includes/process-home",
+      success: function(data) {
+        data = JSON.parse(data);
+        if(data.result[0])
+        {
+          window.location.href="http://www.codefundamentals.com/cadeui/index";
+        }
+        else
+        {
+          $(".overlay").remove();
+          $("#subEmail").prop("disabled", false);
+          if(data.result[1]==="doubleentry")
+          {
+            $("<span id=\"attempts-error\" class=\"error\">*Error: You are already subscribed</span>").prependTo("fieldset");
+          }
+          else if(data.result[1]==="format")
+          {
+            $("<span class=\"error\">*Error: Please enter an e-mail address</span>").prependTo("fieldset");
+          }
+          $("#subEmail").removeClass("valid");
+        }
+      }
+    });
+  }
+  return false;
+});

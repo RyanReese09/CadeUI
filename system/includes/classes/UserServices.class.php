@@ -154,6 +154,7 @@ class UserServices
       {
         $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email) VALUES (:email)");
         $insertSub->execute(array(":email" => $subscriber));
+        //Need to e-mail now
         return array(true,"");
       }
       else
