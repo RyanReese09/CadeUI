@@ -57,7 +57,7 @@ $("#subscribers").submit(function(event) {
             $("<span id=\"attempts-error\" class=\"error\">Error: You are already subscribed</span>").appendTo("#subscribers");
           }
           else if(data.result[1]==="format")
-          {
+          {//tset
             $("<span class=\"error\">Error: Please enter a valid e-mail address</span>").appendTo("#subscribers");
           }
           $("#subEmail").removeClass("valid");
