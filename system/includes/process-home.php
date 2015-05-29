@@ -35,9 +35,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   else if(isset($_POST["subscribe"]))
   {
     if($isValid[0])
-      header("Location: http://www.codefundamentals.com/cadeui/index#testimonials?result=subscribed");
+      header("Location: http://www.codefundamentals.com/cadeui/index?result=subscribed");
     else
-      header("Location: http://www.codefundamentals.com/cadeui/index#testimonials?error=$isValid[1]");
+      header("Location: http://www.codefundamentals.com/cadeui/index?error=$isValid[1]");
   }
 }
 ?>
