@@ -383,6 +383,13 @@ header .hamburger+label::after
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin:1rem 0;
 }
+@media only screen and (max-width:550px)
+{
+  .banner-inner, .banner-why img, .banner-why .banner-text
+  {
+    display:block;
+  }
+}
 .getting-started
 {
   background-color:#eef1f2;
