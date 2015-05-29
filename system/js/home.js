@@ -45,7 +45,7 @@ $("#subscribers").submit(function(event) {
         if(data.result[0])
         {
           $(".overlay").remove();
-          $("#subscribers").fadeOut(1000);
+          $("#subscribers").fadeTo(1000, 0);
           $("<p class=\"success-message\">Congrats</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
         }
         else
