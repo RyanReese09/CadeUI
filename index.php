@@ -115,7 +115,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     <label><input type="email" placeholder="E-mail" name="subEmail" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup">
     <?php
       if(isset($_GET["error"]) && $_GET["error"]==="format")
-        echo "<span class=\"error\">Error: Please enter an e-mail address</span>\n";
+        echo "<span class=\"error\">Error: Please enter a valid e-mail address</span>\n";
       else if(isset($_GET["error"]) && $_GET["error"]==="doubleentry")
         echo "<span id=\"attempts-error\" class=\"error\">Error: You are already subscribed</span>\n";
     ?>

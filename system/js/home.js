@@ -58,7 +58,7 @@ $("#subscribers").submit(function(event) {
           }
           else if(data.result[1]==="format")
           {
-            $("<span class=\"error\">Error: Please enter an e-mail address</span>").appendTo("#subscribers");
+            $("<span class=\"error\">Error: Please enter a valid e-mail address</span>").appendTo("#subscribers");
           }
           $("#subEmail").removeClass("valid");
         }
