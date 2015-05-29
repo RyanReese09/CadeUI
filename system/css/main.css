@@ -352,7 +352,7 @@ header .hamburger+label::after
 }
 .banner-why
 {
-  background: #e8e8e8;
+  background: #FFF;
   padding:1rem 0 3rem;
   text-align:center;
 }
@@ -375,12 +375,12 @@ header .hamburger+label::after
 {
   font-size:3rem;
   margin:1rem 0;
-  color:#FFF;
+  color:#444;
 }
 .banner-why h2
 {
   font-size:1.5rem;
-  color:#FFF;
+  color:#555;
   margin:0 0 1rem;
 }
 @media only screen and (max-width:550px)
