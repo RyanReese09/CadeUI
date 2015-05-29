@@ -44,7 +44,7 @@ $("#subscribers").submit(function(event) {
         data = JSON.parse(data);
         if(data.result[0])
         {
-          window.location.href="http://www.codefundamentals.com/cadeui/index";
+          $(".overlay").remove();
         }
         else
         {
@@ -52,11 +52,11 @@ $("#subscribers").submit(function(event) {
           $("#subEmail").prop("disabled", false);
           if(data.result[1]==="doubleentry")
           {
-            $("<span id=\"attempts-error\" class=\"error\">*Error: You are already subscribed</span>").prependTo("fieldset");
+            $("<span id=\"attempts-error\" class=\"error\">*Error: You are already subscribed</span>").prependTo("#subscribers");
           }
           else if(data.result[1]==="format")
           {
-            $("<span class=\"error\">*Error: Please enter an e-mail address</span>").prependTo("fieldset");
+            $("<span class=\"error\">*Error: Please enter an e-mail address</span>").prependTo("#subscribers");
           }
           $("#subEmail").removeClass("valid");
         }
