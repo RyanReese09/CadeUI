@@ -60,7 +60,7 @@ $("#subscribers").submit(function(event) {
           {
             $("<span class=\"error\">Error: Please enter a valid e-mail address</span>").appendTo("#subscribers");
           }
-          $("#subEmail").removeClass("valid");
+          $("#subEmail").removeClass("valid").addClass("error");
         }
       }
     });
