@@ -10,11 +10,11 @@ class Email
   public function subscriber()
   {
     $mail = new PHPMailer;
-/*
+
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = "smtp.gmail.com";  // Specify main and backup SMTP servers. Try localhost if this fails -RR
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = "admin@codefundamentals.com";                 // SMTP username
+    /*$mail->Username = "admin@codefundamentals.com";                 // SMTP username
     $mail->Password = "RubiksCubes09!";
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
