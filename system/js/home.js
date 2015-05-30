@@ -51,7 +51,7 @@ $("#subscribers").submit(function(event) {
             }, 1000);
           if(data.result[1]!=="" && data.result[1]==="email")
           {
-            $("<p class=\"success-message\" style=\"display:block\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter. But...there was an issue...").appendTo("#newsletter").delay(1500).fadeIn(1000);
+            $("<p class=\"success-message\" style=\"display:block\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter. But...there was an issue...</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
             $("<p class=\"warning-message\" style=\"display:block\"><span>Warning:</span> The confirmation e-mail was unable to send. You are still subscribed!</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
           }
           else
