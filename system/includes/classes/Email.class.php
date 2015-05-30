@@ -11,13 +11,13 @@ class Email
   {
     $mail = new PHPMailer;
 
-    /*$mail->isSMTP();  */                                    // Set mailer to use SMTP
-    $mail->Host = "smtp.gmail.com";  // Specify main and backup SMTP servers. Try localhost if this fails -RR
+    $mail->isSMTP();
+    $mail->Host = "mail.codefundamentals.com";  // Specify main and backup SMTP servers. Try localhost if this fails -RR
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = "admin@codefundamentals.com";                 // SMTP username
     $mail->Password = "RubiksCubes09!";
     $mail->SMTPSecure = 'tls';//start here if fail
-    $mail->Port = 587;
+    $mail->Port = 25;
     $mail->From = 'admin@codefundamentals.com';
     $mail->FromName = 'Mailer';
     $mail->addAddress('sportsdude.reese@gmail.com', 'Joe User');
@@ -35,7 +35,6 @@ class Email
     {
       return true;
     }
-    return true;
   }
 }
 ?>
