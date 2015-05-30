@@ -25,10 +25,10 @@ class Email
     $mail->Subject="Subject goes here";
     $mail->Body=$this->authKey;
 
-    if(!$mail->send())
+    //if(!$mail->send())
       return false;
-    else
-      return true;
+    //else
+     // return true;
   }
 }
 ?>

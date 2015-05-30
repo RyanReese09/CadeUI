@@ -26,7 +26,7 @@ class Subscribers
         if($sendMail->subscriber())
           return array(true,"");
         else
-          return array(true,"email");
+          return array(true,$subscriber);
       }
       else
         return array(false,"doubleentry");

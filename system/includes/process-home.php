@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     if($isValid[0])
     {
       if($isValid[1]!=="")//This means the mail didn't send. It returned true with the error message
-        header("Location: http://www.codefundamentals.com/cadeui/index?result=subscribed&mailed=no#newsletter");
+        header("Location: http://www.codefundamentals.com/cadeui/index?result=subscribed&subEmail=".$isValid[1]."#newsletter");
       else
         header("Location: http://www.codefundamentals.com/cadeui/index?result=subscribed#newsletter");
     }
