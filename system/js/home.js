@@ -45,14 +45,10 @@ $("#subscribers").submit(function(event) {
         if(data.result[0])
         {
           $(".overlay").remove();
-          $("#subscribers").animate({
-            opacity: 0,
-            height: "toggle"
-            }, 1000);
+          $("#subscribers").fadeOut(1000, 0);
           if(data.result[1]!=="")
           {
-            $("<p class=\"success-message\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter. But...there was an issue...</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
-            $("<p class=\"warning-message\"><span>Warning:</span> The confirmation e-mail was unable to send to <strong>"+data.result[1]+"</strong>. You are still subscribed!</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
+            $("<p class=\"warning-message\"><span>Warning:</span> The confirmation e-mail was unable to send to <strong>"+data.result[1]+"</strong>. You are still subscribed! Be aware that if this e-mail didn't send, then others might not as well!</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
           }
           else
             $("<p class=\"success-message\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);

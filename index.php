@@ -128,8 +128,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
   {
     if(isset($_GET["subEmail"]))
     {
-      echo "<p class=\"success-message\" style=\"display:block\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter. But...there was an issue...</p>";
-      echo "<p class=\"warning-message\" style=\"display:block\"><span>Warning:</span> The confirmation e-mail was unable to send to <strong>".$_GET['subEmail']."</strong>. You are still subscribed!</p>";
+      echo "<p class=\"warning-message\" style=\"display:block\"><span>Warning:</span> The confirmation e-mail was unable to send to <strong>".$_GET['subEmail']."</strong>. You are still subscribed! Be aware that if this e-mail didn't send, then others might not as well!</p>";
     }
     else
       echo "<p class=\"success-message\" style=\"display:block\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter. Please check your e-mail for the confirmation code.</p>";
