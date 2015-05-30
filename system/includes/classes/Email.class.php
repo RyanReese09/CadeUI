@@ -26,9 +26,9 @@ class Email
     $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    if(!$mail->send())
+    /*if(!$mail->send())
       return false;
-    else
+    else*/
       return true;
   }
 }
