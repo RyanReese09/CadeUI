@@ -9,8 +9,8 @@ class Email
   }
   public function subscriber()
   {
-    /*$mail = new PHPMailer;
-
+    $mail = new PHPMailer;
+/*
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = "smtp.gmail.com";  // Specify main and backup SMTP servers. Try localhost if this fails -RR
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
