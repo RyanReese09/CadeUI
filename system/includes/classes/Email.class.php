@@ -7,7 +7,7 @@ class Email
     $this->address=$address;
     $this->authKey=$authKey;
   }
-  public function subscriber()
+  public function welcomeEmail()
   {
     $mail = new PHPMailer;
 
@@ -22,7 +22,7 @@ class Email
     $mail->FromName="Celebrate! You're subscribed!";
     $mail->addAddress($this->address);
     $mail->isHTML(true);
-    $mail->Subject="Subject goes here";
+    $mail->Subject="You're subscribed to the CadeUI Newsletter";
     $mail->Body=$this->authKey;
 
     if(!$mail->send())

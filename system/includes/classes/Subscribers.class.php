@@ -22,8 +22,8 @@ class Subscribers
         $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, joinDate, activationKey, confirmed) VALUES (:email, :joinDate, :validToken, 0)");
         $insertSub->execute(array(":email" => $subscriber, ":joinDate" => $dateFormat->returnDateTime("now","Y-m-d H:i:s"), ":validToken" => $authKey));
         
-        $sendMail=new Email($subscriber,$authKey);
-        if($sendMail->subscriber())
+        $welcome=new Email($subscriber,$authKey);
+        if($welcome->welcomeEmail())
           return array(true,"");
         else
           return array(true,$subscriber);
