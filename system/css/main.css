@@ -882,7 +882,7 @@ input.valid.lock:focus
 {
   background:#DFF2BF url(/cadeui/system/images/success-checkmark.png) no-repeat 1rem center;
   color:#4F8A10;
-  padding:1rem;
+  padding:1rem 3rem;
   border-radius:1rem;
   width:95%;
   max-width:600px;
