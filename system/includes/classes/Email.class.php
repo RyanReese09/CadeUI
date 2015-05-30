@@ -1,5 +1,4 @@
 <?php
-define('PATH', dirname(__FILE__));
 require PATH.'/system/includes/PHPMailer/PHPMailerAutoload.php';
 class Email
 {
