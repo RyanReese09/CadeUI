@@ -1,5 +1,6 @@
 <?php
 $page="Homepage";
+define('PATH', dirname(__FILE__));
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
 <body>
