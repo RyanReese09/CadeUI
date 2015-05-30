@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   else if(isset($_POST["subEmail"]))
   {
     $email=filter_input(INPUT_POST,"subEmail");
-    $formData=new UserServices($pdo);
+    $formData=new Subscribers($pdo);
     $isValid=$formData->newSubscriber($email);
   }
   $isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
