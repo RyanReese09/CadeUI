@@ -122,11 +122,8 @@ class UserServices
   }
   private function getDateTime($when,$format)
   {
-    $instance=new DateTime($when);
-    if($format)
-      return $instance->format($format);
-    else
-      return $instance;
+    $dateFormat=new DateFormat();
+    return $dateFormat->returnDateTime($when,$format);
   }
   private function findIP()
   {
