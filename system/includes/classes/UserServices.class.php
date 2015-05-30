@@ -156,7 +156,7 @@ class UserServices
 
       if($findSub->rowCount()===0)
       {
-        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, activationKey, confirmed) VALUES (:email, $this->createToken(30), 0)");
+        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, activationKey, confirmed) VALUES (:email, $this->createToken(16), 0)");
         $insertSub->execute(array(":email" => $subscriber));
         //Need to e-mail now
         return array(true,"");
