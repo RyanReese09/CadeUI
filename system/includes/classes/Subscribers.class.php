@@ -1,3 +1,4 @@
+<?php
 public function __construct(PDO $pdo)
 {
   $this->pdo=$pdo;
@@ -35,3 +36,4 @@ public function newSubscriber($email)
   else
     return array(false,"format");
 }
+?>
