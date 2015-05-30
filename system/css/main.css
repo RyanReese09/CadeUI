@@ -880,7 +880,7 @@ input.valid.lock:focus
 }
 .success-message
 {
-  background-color:#DFF2BF;
+  background:#DFF2BF url(/cadeui/system/images/success-checkmark.png) no-repeat;
   color:#4F8A10;
   padding:1rem;
   border-radius:1rem;
