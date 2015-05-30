@@ -33,8 +33,7 @@ class Email
 
     if(!$mail->send())
     {
-      echo 'Message could not be sent.';
-      echo 'Mailer Error: ' . $mail->ErrorInfo;
+      return false$mail->ErrorInfo;
     }
     else
     {
