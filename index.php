@@ -111,7 +111,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
   if(!isset($_GET["result"]))
   {
   ?>
-  <form action="/cadeui/system/includes/process-home" method="post" id="subscribers">
+  <form action="/cadeui/system/includes/process-home.php" method="post" id="subscribers">
     <label><input type="email" placeholder="E-mail" name="subEmail" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup">
     <?php
       if(isset($_GET["error"]) && $_GET["error"]==="format")
