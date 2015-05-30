@@ -880,7 +880,8 @@ input.valid.lock:focus
 }
 .success-message
 {
-  background-color:lime;
+  background-color:#DFF2BF;
+  color:#4F8A10;
   padding:1rem;
   border-radius:1rem;
   text-align:center;
