@@ -895,5 +895,6 @@ input.valid.lock:focus
 }
 .success-message span
 {
+  color:#4F8A10;
   font-weight:bold;
 }
