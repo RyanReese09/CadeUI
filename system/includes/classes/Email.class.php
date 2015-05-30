@@ -16,7 +16,7 @@ class Email
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = "admin@codefundamentals.com";                 // SMTP username
     $mail->Password = "RubiksCubes09!";
-    /*$mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = 'tls';//start here if fail
     $mail->Port = 587;
     $mail->From = 'admin@codefundamentals.com';
     $mail->FromName = 'Mailer';
@@ -25,7 +25,7 @@ class Email
     $mail->Subject = 'Here is the subject';
     $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
+/*
     if(!$mail->send())
     {
       return false;
