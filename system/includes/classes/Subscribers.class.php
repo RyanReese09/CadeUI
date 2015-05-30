@@ -24,7 +24,7 @@ class Subscribers
         
         $sendMail=new Email($subscriber,$authKey);
         $test=$sendMail->subscriber();
-        if($test)
+        if($test && $test!==NULL)
           return array(true,"");
         else
           return array(false,"email");
