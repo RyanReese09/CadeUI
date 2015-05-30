@@ -865,7 +865,7 @@ input.valid.lock:focus
 }
 .success-message, .warning-message
 {
-  background:#DFF2BF url(/cadeui/system/images/success-checkmark.png) no-repeat 1rem center;
+  background:#DFF2BF url(/cadeui/system/images/success-message.png) no-repeat 1rem center;
   color:#4F8A10;
   padding:1rem 3rem;
   margin:1rem 0;
@@ -883,7 +883,7 @@ input.valid.lock:focus
 .warning-message
 {
   color: #9F6000;
-  background-color: #FEEFB3;
+  background:#FEEFB3 url(/cadeui/system/images/warning-message.png) no-repeat 1rem center;
 }
 .warning-message span
 {
