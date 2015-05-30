@@ -34,7 +34,7 @@ class Email
     else
     {
       return true;
-    }*
+    }
     return true;
   }
 }
