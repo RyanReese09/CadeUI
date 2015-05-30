@@ -129,7 +129,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
     echo "<p class=\"success-message\" style=\"display:block\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter</p>";
     if(isset($_GET["mailed"]) && $_GET["mailed"]==="no")
     {
-      echo "<p class=\"warning-message\"><span>Warning:</span> The confirmation e-mail was unable to send. You are still subscribed!</p>";
+      echo "<p class=\"warning-message\" style=\"display:block\"><span>Warning:</span> The confirmation e-mail was unable to send. You are still subscribed!</p>";
     }
   }
   ?>
