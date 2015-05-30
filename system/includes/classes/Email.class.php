@@ -1,4 +1,5 @@
 <?php
+require_once("/cadeui/system/includes/PHPMailer/PHPMailerAutoload.php");
 class Email
 {
   public function __construct($address, $authKey)
@@ -8,8 +9,6 @@ class Email
   }
   public function subscriber()
   {
-    require_once("/cadeui/system/includes/PHPMailer/PHPMailerAutoload.php");
-
     $mail = new PHPMailer;
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
