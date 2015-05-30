@@ -45,7 +45,12 @@ $("#subscribers").submit(function(event) {
         if(data.result[0])
         {
           $(".overlay").remove();
-          $("#subscribers").fadeTo(1000, 0);
+          $("#subscribers").animate({
+    opacity: 0,
+    height: "toggle"
+  }, 1000, function() {
+    // Animation complete.
+  });
           $("<p class=\"success-message\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
           if(data.result[1]!=="" && data.result[1]==="email")
           {
