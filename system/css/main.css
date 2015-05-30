@@ -884,9 +884,11 @@ input.valid.lock:focus
   padding:1rem;
   border-radius:1rem;
   text-align:center;
-  width:100%;
+  width:90%;
   position:absolute;
   top:50%;
   left:0;
+  right:0;
+  margin:auto;
   display:none;
 }
