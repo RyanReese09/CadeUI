@@ -25,10 +25,9 @@ class Email
     $mail->Subject="You're subscribed to the CadeUI Newsletter";
     $mail->Body=$this->authKey;
 
-    if(!$mail->send())
-      return false;
-    else
-      return true;
+    $mail->send();
+    
+    return true;
   }
 }
 ?>
