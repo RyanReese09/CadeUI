@@ -527,7 +527,7 @@ header .hamburger+label::after
 }
 .mailing-list
 {
-  padding:1rem 1rem 5rem;
+  padding:1rem 1rem 3rem;
   margin:0 auto;
   max-width:1000px;
   position:relative;
@@ -535,7 +535,7 @@ header .hamburger+label::after
 .mailing-list h1
 {
   text-align:center;
-  margin-bottom:4rem;
+  margin-bottom:2rem;
   opacity:0.8;
 }
 .mailing-list form
@@ -868,7 +868,7 @@ input.valid.lock:focus
   background:#DFF2BF url(/cadeui/system/images/success-message.png) no-repeat 1rem center;
   color:#4F8A10;
   padding:1rem 3rem;
-  margin:1rem auto;
+  margin:0 auto 1rem;
   border-radius:1rem;
   width:95%;
   max-width:600px;
