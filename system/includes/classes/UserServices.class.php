@@ -28,7 +28,7 @@ class UserServices
         if($remember)
           $this->setCookie($userDetails);
 
-        $this->setSessions($userDetails,$this->findIP());
+        $this->setSessions($userDetails,$_SERVER["REMOTE_ADDR"]);
         $this->resetAttempts();
         return array(true,"");
       }
@@ -47,11 +47,11 @@ class UserServices
   private function hasLoginDelay()
   {
     $grabIPuser=$this->pdo->prepare("SELECT * FROM Attempted_Logins WHERE ip_address = :ip_address");
-    $grabIPuser->execute(array(":ip_address" => $this->findIP()));
+    $grabIPuser->execute(array(":ip_address" => $_SERVER["REMOTE_ADDR"]));
     if($grabIPuser->rowCount()===0)
     {
       $insertIPdetails=$this->pdo->prepare("INSERT INTO Attempted_Logins (ip_address,login_attempts,last_login_time) VALUES(:ip_address,:login_attempts,:last_login_time)");
-      $insertIPdetails->execute(array(":ip_address" => $this->findIP(),":login_attempts" => 0,":last_login_time" => $this->getDateTime("now","Y-m-d H:i:s")));
+      $insertIPdetails->execute(array(":ip_address" => $_SERVER["REMOTE_ADDR"],":login_attempts" => 0,":last_login_time" => $this->getDateTime("now","Y-m-d H:i:s")));
       return true;
     }
     else
@@ -125,14 +125,10 @@ class UserServices
     $dateFormat=new DateFormat();
     return $dateFormat->returnDateTime($when,$format);
   }
-  private function findIP()
-  {
-    return $_SERVER["REMOTE_ADDR"];
-  }
   private function resetAttempts()
   {
     $resetAttempts=$this->pdo->prepare("UPDATE Attempted_Logins SET login_attempts=0,last_login_time=:last_login_time WHERE ip_address=:ip_address");
-    $resetAttempts->execute(array(":last_login_time" => $this->getDateTime("now","Y-m-d H:i:s"),":ip_address" => $this->findIP()));
+    $resetAttempts->execute(array(":last_login_time" => $this->getDateTime("now","Y-m-d H:i:s"),":ip_address" => $_SERVER["REMOTE_ADDR"]));
   }
   public function newAuthKey($userID)
   {
