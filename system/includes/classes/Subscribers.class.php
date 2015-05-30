@@ -1,3 +1,7 @@
+public function __construct(PDO $pdo)
+{
+  $this->pdo=$pdo;
+}
 public function createToken($crypLength)
 {
   return bin2hex(openssl_random_pseudo_bytes($crypLength));
