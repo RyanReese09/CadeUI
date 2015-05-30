@@ -1,5 +1,5 @@
 <?php
-require 'system/includes/PHPMailer/PHPMailerAutoload.php';
+require 'http://www.codefundamentals.com/cadeui/system/includes/PHPMailer/PHPMailerAutoload.php';
 class Email
 {
   public function __construct($address, $authKey)
