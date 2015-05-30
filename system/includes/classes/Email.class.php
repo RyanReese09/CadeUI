@@ -27,14 +27,9 @@ class Email
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if(!$mail->send())
-    {
       return false;
-      //$mail->ErrorInfo;
-    }
     else
-    {
       return true;
-    }
   }
 }
 ?>
