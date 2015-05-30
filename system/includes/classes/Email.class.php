@@ -13,7 +13,7 @@ class Email
     $mail = new PHPMailer;
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = "localhost";  // Specify main and backup SMTP servers
+    $mail->Host = "mail.codefundamentals.com";  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = "admin@codefundamentals.com";                 // SMTP username
     $mail->Password = "RubiksCubes09!";
