@@ -137,11 +137,7 @@ class UserServices
   public function newAuthKey($userID)
   {
     $resetAuthKey=$this->pdo->prepare("UPDATE Users SET authkey=:authkey WHERE id=:userid");
-    $resetAuthKey->execute(array(":authkey" => $this->createToken(16),":userid" => $userID));
-  }
-  public function createToken($crypLength)
-  {
-    return bin2hex(openssl_random_pseudo_bytes($crypLength));
+    $resetAuthKey->execute(array(":authkey" => bin2hex(openssl_random_pseudo_bytes($crypLength)),":userid" => $userID));
   }
 }
 ?>
