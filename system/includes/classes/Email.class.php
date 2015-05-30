@@ -1,5 +1,5 @@
 <?php
-require "../PHPMailer/PHPMailerAutoload.php";
+require 'system/includes/PHPMailer/PHPMailerAutoload.php';
 class Email
 {
   public function __construct($address, $authKey)
