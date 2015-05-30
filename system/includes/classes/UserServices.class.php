@@ -140,7 +140,11 @@ class UserServices
   public function newAuthKey($userID)
   {
     $resetAuthKey=$this->pdo->prepare("UPDATE Users SET authkey=:authkey WHERE id=:userid");
-    $resetAuthKey->execute(array(":authkey" => bin2hex(openssl_random_pseudo_bytes(16)),":userid" => $userID));
+    $resetAuthKey->execute(array(":authkey" => $this->createToken(16),":userid" => $userID));
+  }
+  public function createToken($crypLength)
+  {
+    return bin2hex(openssl_random_pseudo_bytes($crypLength));
   }
   public function newSubscriber($email)
   {
@@ -152,8 +156,7 @@ class UserServices
 
       if($findSub->rowCount()===0)
       {
-        $validationKey=bin2hex(openssl_random_pseudo_bytes(30));
-        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, activationKey, confirmed) VALUES (:email, $validationKey, 0)");
+        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, activationKey, confirmed) VALUES (:email, $this->createToken(30), 0)");
         $insertSub->execute(array(":email" => $subscriber));
         //Need to e-mail now
         return array(true,"");
