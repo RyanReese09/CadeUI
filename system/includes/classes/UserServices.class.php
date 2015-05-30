@@ -156,8 +156,8 @@ class UserServices
 
       if($findSub->rowCount()===0)
       {
-        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, activationKey, confirmed) VALUES (:email, :validToken, 0)");
-        $insertSub->execute(array(":email" => $subscriber, ":validToken" => $this->createToken(32)));
+        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, joinDate, activationKey, confirmed) VALUES (:email, :joinDate, :validToken, 0)");
+        $insertSub->execute(array(":email" => $subscriber, ":joinDate" => $this->getDateTime("now","Y-m-d H:i:s"), ":validToken" => $this->createToken(32)));
         //Need to e-mail now
         return array(true,"");
       }
