@@ -880,12 +880,12 @@ input.valid.lock:focus
 }
 .success-message
 {
-  background:#DFF2BF url(/cadeui/system/images/success-checkmark.png) no-repeat;
+  background:#DFF2BF url(/cadeui/system/images/success-checkmark.png) no-repeat 1rem center;
   color:#4F8A10;
   padding:1rem;
   border-radius:1rem;
-  text-align:center;
-  width:90%;
+  width:95%;
+  max-width:600px;
   position:absolute;
   top:50%;
   left:0;
