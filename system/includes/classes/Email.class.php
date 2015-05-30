@@ -18,7 +18,7 @@ class Email
     $mail->Username = "admin@codefundamentals.com";                 // SMTP username
     $mail->Password = "RubiksCubes09!";                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->Port = 25;                                    // TCP port to connect to
 
     $mail->From = 'admin@codefundamentals.com';
     $mail->FromName = 'Mailer';
