@@ -8,7 +8,7 @@ class Email
   }
   public function subscriber()
   {
-    $test=mail("sportsdude.reese@gmail.com", "subject", "body");
+    $test=mail("admin@codefundamentals.com", "subject", "body");
     if($test)
       return true;
     else
