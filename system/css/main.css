@@ -9,39 +9,24 @@ h1
   text-transform:uppercase;
   font-size:1.8rem;
 }
-.new-cade-button
+.new-cade-button:active
 {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  background-color: rgba(219,87,5,1);
+  font-size: 3rem;
   display: inline-block;
-  position:relative;
-  border-radius: 10px;
-  margin:1rem 0 0.4rem 0;
-  text-transform: uppercase;
-  box-shadow: 0px 3px rgba(128,128,128,1),0px 4px rgba(118,118,118,1),0px 5px rgba(108,108,108,1),0px 6px rgba(98,98,98,1),0px 7px rgba(88,88,88,1),0px 8px rgba(78,78,78,1),0px 14px 6px -1px rgba(128,128,128,1);
-} 
-.new-cade-button span
-{
-  background-color: #E8E8E8;
-  color:#FF9A22;
-  box-shadow:0px -1px #fff, 0px 1px 1px #FFFFFF;
-  border-radius: 10px;
-  transition:0.1s transform ease-in-out, 0.4s color ease-in-out;
-  display:inline-block;
-  padding:1rem 3rem;
-  text-shadow: 0px 1px #fff, 0px -1px #DE9B4B;
-}
-.new-cade-button span:hover
-{
-  color: #D47708;
-  text-shadow: 0px -1px #B5701D;
-  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+	text-align: center;
+	transition: all .1s ease;
 }
 .new-cade-button:active
 {
-  box-shadow:0px 3px rgba(128,128,128,1),0px 4px rgba(118,118,118,1),0px 5px rgba(108,108,108,1),0px 6px rgba(98,98,98,1),0px 7px rgba(88,88,88,1),0px 8px rgba(78,78,78,1),0px 10px 2px 0px rgba(128,128,128,.6);
-}
-.new-cade-button:active span
-{
-  transform: translate(0, 5px);
+  box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
 }
 .ui-dialog
 {
