@@ -12,24 +12,23 @@ class Email
     $mail = new PHPMailer;
 
     $mail->isSMTP();
-    $mail->Host = "mail.codefundamentals.com";  // Specify main and backup SMTP servers. Try localhost if this fails -RR
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = "admin@codefundamentals.com";                 // SMTP username
-    $mail->Password = "RubiksCubes09!";
-    $mail->SMTPSecure = 'tls';//start here if fail
-    $mail->Port = 25;
-    $mail->From = 'admin@codefundamentals.com';
-    $mail->FromName = 'Mailer';
-    $mail->addAddress('sportsdude.reese@gmail.com', 'Joe User');
+    $mail->Host="mail.codefundamentals.com";
+    $mail->SMTPAuth=true;
+    $mail->Username="admin@codefundamentals.com";
+    $mail->Password="RubiksCubes09!";
+    $mail->SMTPSecure="tls";
+    $mail->Port=25;
+    $mail->From="admin@codefundamentals.com";
+    $mail->FromName="Celebrate! You're subscribed!";
+    $mail->addAddress($this->address);
     $mail->isHTML(true);
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject="Subject goes here";
+    $mail->Body=$this->authKey;
 
-    //if(!$mail->send())
+    if(!$mail->send())
       return false;
-   // else
-     // return true;
+    else
+      return true;
   }
 }
 ?>
