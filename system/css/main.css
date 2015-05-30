@@ -893,3 +893,7 @@ input.valid.lock:focus
   margin:auto;
   display:none;
 }
+.succses-message span
+{
+  font-weight:bold;
+}

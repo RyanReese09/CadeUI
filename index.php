@@ -126,7 +126,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
   }
   else if($_GET["result"]==="subscribed")
   {
-    echo "<p class=\"success-message\" style=\"display:block\">Success: You have been successfully subscribed to the CadeUI newsletter</p>";
+    echo "<p class=\"success-message\" style=\"display:block\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter</p>";
   }
   ?>
 </div>
