@@ -66,7 +66,7 @@ class Email
         <table style="width:100%;">
           <tr>
             <td align="center">
-              <p style="font-size: 14px;color: #666;">Don\'t like these annoying emails? <a href="#" style="color:#999;"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
+              <p style="font-size: 14px;color: #666;">Don\'t like these annoying emails? <a href="http://www.codefundamentals.com/cadeui/unsubscribe?email='.$this->address.'" style="color:#999;"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
             </td>
           </tr>
         </table>

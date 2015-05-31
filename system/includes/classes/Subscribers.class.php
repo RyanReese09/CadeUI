@@ -32,5 +32,9 @@ class Subscribers
     else
       return array(false,"format");
   }
+  public function unsubscribe()
+  {
+    return true;
+  }
 }
 ?>
