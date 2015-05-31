@@ -34,10 +34,10 @@ class Subscribers
   }
   public function unsubscribe($email)
   {
-    $subEmail=filter_var($email,FILTER_SANITIZE_EMAIL);
+    $subEmail=filter_var($email,FILTER_VALIDATE_EMAIL);
     if($subEmail)
     {
-      $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=':email'");
+      $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=\":email\"");
       $deleteSub->execute(array(":email" => $subEmail));
       $countDeletedSubs = $deleteSub->rowCount();
       if($countDeletedSubs>0)
