@@ -14,7 +14,7 @@ if($unsubscriberEmail)
     echo $unsubscriberEmail;
   }
   else
-    echo "user not found? returned false";
+    echo "user not found or corrupted email? returned false";
 }
 else
   echo "Bad e-mail";
