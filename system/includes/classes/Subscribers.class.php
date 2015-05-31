@@ -34,15 +34,11 @@ class Subscribers
   }
   public function unsubscribe($subEmail)
   {
-    $findSub=$this->pdo->prepare("SELECT * FROM Subscribers WHERE email=:email");
-    $findSub->execute(array(":email" => $subEmail));
-
-    if($findSub->rowCount()>0)
-    {
-      $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=:email");
-      $deleteSub->execute(array(":email" => $subEmail));
+    $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=:email");
+    $deleteSub->execute(array(":email" => $subEmail));
+    $countDeletedSubs = $deleteSub->rowCount();
+    if($countDeletedSubs>0)
       return true;
-    }
     else
       return false;
   }
