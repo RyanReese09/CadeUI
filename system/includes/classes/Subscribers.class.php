@@ -42,9 +42,11 @@ class Subscribers
       $countDeletedSubs = $deleteSub->rowCount();
       if($countDeletedSubs>0)
         return true;
+      else
+        return false;
     }
     else
-      return false;
+      return true;
   }
 }
 ?>
