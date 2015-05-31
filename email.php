@@ -18,12 +18,12 @@ echo '<!DOCTYPE HTML>
               <table style="width:100%;">
                 <tr>
                   <td style="padding:10px 0;">
+                    <h1 style="font-size:36px;font-family: \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif;color: #000;margin: 20px 0 10px;line-height: 1.2;font-weight: 200;">Header (h1) text here</h1>
                     <p style="padding-bottom:font-size:14px;font-weight:normal;">Thanks for subscribing to the SitePoint - Versioning email list. To complete your subscription, you need to confirm you got this email. To do so, please click the link below:</p>
                     <p style="padding-bottom:font-size:14px;font-weight:normal;"><a href="http://www.codefundamentals.com/cadeui/activate?id=" style="font-family: \'Helvetica Neue\', \'Helvetica\', Helvetica, Arial, sans-serif;font-size: 100%;text-decoration: none;color: #FFF;background-color: #348eda;border: solid #348eda;border-width: 10px 20px;line-height: 2;font-weight: bold;margin-right: 10px;text-align: center;cursor: pointer;display: inline-block;border-radius: 25px;">Activate your e-mail</a></p>
                   </td>
                 </tr>
               </table>
-              <h1 style="font-size:36px;font-family: \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif;color: #000;margin: 20px 0 10px;line-height: 1.2;font-weight: 200;">Header (h1) text here</h1>
               <h2 style="font-size:28px;font-family: \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif;color: #000;margin: 20px 0 10px;line-height: 1.2;font-weight: 200;">Header (h2) text here</h2>
               <h3 style="font-size:22px;font-family: \'Helvetica Neue\', Helvetica, Arial, \'Lucida Grande\', sans-serif;color: #000;margin: 20px 0 10px;line-height: 1.2;font-weight: 200;">Header (h3) text here</h3>
               <p style="padding-bottom:font-size:14px;font-weight:normal;">Thanks, have a lovely day.</p>
