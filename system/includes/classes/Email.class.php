@@ -42,7 +42,7 @@ class Email
               <table style="width:100%;">
                 <tr>
                   <td style="padding:10px 0;">
-                    <p style="padding-bottom:font-size:14px;font-weight:normal;"><a href="#" style="font-family: \'Helvetica Neue\', \'Helvetica\', Helvetica, Arial, sans-serif;font-size: 100%;text-decoration: none;color: #FFF;background-color: #348eda;border: solid #348eda;border-width: 10px 20px;line-height: 2;font-weight: bold;margin-right: 10px;text-align: center;cursor: pointer;display: inline-block;border-radius: 25px;">Activate your e-mail</a></p>
+                    <p style="padding-bottom:font-size:14px;font-weight:normal;"><a href="http://www.codefundamentals.com/cadeui/activate?id='.$this->authKey.'" style="font-family: \'Helvetica Neue\', \'Helvetica\', Helvetica, Arial, sans-serif;font-size: 100%;text-decoration: none;color: #FFF;background-color: #348eda;border: solid #348eda;border-width: 10px 20px;line-height: 2;font-weight: bold;margin-right: 10px;text-align: center;cursor: pointer;display: inline-block;border-radius: 25px;">Activate your e-mail</a></p>
                   </td>
                 </tr>
               </table>
@@ -66,7 +66,7 @@ class Email
         <table style="width:100%;">
           <tr>
             <td align="center">
-              <p style="font-size: 14px;color: #666;">Don\'t like these annoying emails? <a href="'.$this->authKey.'" style="color:#999;"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
+              <p style="font-size: 14px;color: #666;">Don\'t like these annoying emails? <a href="#" style="color:#999;"><unsubscribe>Unsubscribe</unsubscribe></a>.</p>
             </td>
           </tr>
         </table>
