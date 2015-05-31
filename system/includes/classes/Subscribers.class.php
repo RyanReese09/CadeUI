@@ -32,9 +32,19 @@ class Subscribers
     else
       return array(false,"format");
   }
-  public function unsubscribe()
+  public function unsubscribe($subEmail)
   {
-    return true;
+    $findSub=$this->pdo->prepare("SELECT * FROM Subscribers WHERE email=:email");
+    $findSub->execute(array(":email" => $subEmail));
+
+    if($findSub->rowCount()>0)
+    {
+      $confirmSub=$this->pdo->prepare("UPDATE Subscribers SET confirmed=1 WHERE email=:email");
+      $confirmSub->execute(array(":email" => $subEmail));
+      return true;
+    }
+    else
+      return false;
   }
 }
 ?>

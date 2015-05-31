@@ -8,11 +8,13 @@ $unsubscriberEmail=filter_var($_GET["email"],FILTER_SANITIZE_EMAIL);
 if($unsubscriberEmail)
 {
   $unsubscribe=new Subscribers($pdo);
-  if($unsubscribe->unsubscribe())
+  if($unsubscribe->unsubscribe($unsubscriberEmail))
   {
     echo "yay, unsubscribe";
     echo $unsubscriberEmail;
   }
+  else
+    echo "user not found? returned false";
 }
 else
   echo "Bad e-mail";
