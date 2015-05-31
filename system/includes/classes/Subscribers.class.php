@@ -46,7 +46,7 @@ class Subscribers
         return false;
     }
     else
-      return true;
+      return false;
   }
 }
 ?>
