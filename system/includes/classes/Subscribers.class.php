@@ -39,8 +39,8 @@ class Subscribers
 
     if($findSub->rowCount()>0)
     {
-      $confirmSub=$this->pdo->prepare("UPDATE Subscribers SET confirmed=1 WHERE email=:email");
-      $confirmSub->execute(array(":email" => $subEmail));
+      $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=:email");
+      $deleteSub->execute(array(":email" => $subEmail));
       return true;
     }
     else
