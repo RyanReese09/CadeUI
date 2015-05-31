@@ -4,14 +4,20 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
 <body>
 <?php
-$unsubscribe=new Subscribers($pdo);
-if($unsubscribe->unsubscribe($_GET["email"]))
+$subscription=new Subscribers($pdo);
+$unsubscribe=$subscription->unsubscribe($_GET["email"]);
+if($unsubscribe[0])
 {
   echo "yay, unsubscribe";
   echo $unsubscriberEmail;
 }
 else
-  echo "user not found or corrupted email? returned false";
+{
+  if($unsubscribe[1]==="format")
+    echo "corrupt email format";
+  else if($unsubscribe[1]==="notfound")
+    echo "email not in system";
+}
 ?>
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/js-files.php");
