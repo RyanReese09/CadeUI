@@ -40,10 +40,7 @@ class Subscribers
       $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=\":email\"");
       $deleteSub->execute(array(":email" => $subEmail));
       $countDeletedSubs = $deleteSub->rowCount();
-      if($countDeletedSubs>0)
-        return true;
-      else
-        return false;
+      return true;
     }
     else
       return false;
