@@ -26,8 +26,6 @@ class Email
     $mail->Body=$this->authKey;
 
     $mail->send();
-    
-    return true;
   }
 }
 ?>

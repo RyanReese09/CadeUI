@@ -46,7 +46,7 @@ $("#subscribers").submit(function(event) {
         {
           $(".overlay").remove();
           $("#subscribers").fadeTo(1000,0);
-          $("<p class=\"success-message\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter! Please check your e-mail for the confirmation code.</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
+          $("<p class=\"success-message\"><span>Success:</span> You have been successfully subscribed to the CadeUI newsletter. Please check your e-mail, <strong>"+data.result[1]+"</strong>, for the confirmation code.</p>").appendTo("#newsletter").delay(1500).fadeIn(1000);
         }
         else
         {

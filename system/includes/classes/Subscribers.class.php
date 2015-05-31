@@ -23,10 +23,8 @@ class Subscribers
         $insertSub->execute(array(":email" => $subscriber, ":joinDate" => $dateFormat->returnDateTime("now","Y-m-d H:i:s"), ":validToken" => $authKey));
         
         $welcome=new Email($subscriber,$authKey);
-        if($welcome->welcomeEmail())
-          return array(true,"");
-        else
-          return array(true,$subscriber);
+        $welcome->welcomeEmail();
+        return array(true,$subscriber);
       }
       else
         return array(false,"doubleentry");
