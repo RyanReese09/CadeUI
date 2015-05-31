@@ -4,7 +4,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
 <body>
 <?php
-$unsubscriberEmail=filter_var($_GET["email"],FILTER_SANITIZE_EMAIL);
+$unsubscriberEmail=filter_var($_GET["email"],FILTER_VALIDATE_EMAIL);
 if($unsubscriberEmail)
 {
   $unsubscribe=new Subscribers($pdo);
