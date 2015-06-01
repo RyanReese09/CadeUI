@@ -53,6 +53,18 @@ if($page==="Homepage" || $page==="Login")
 <link href="/cadeui/system/css/home.css" type="text/css" rel="stylesheet">
 <?php
 }
+else if($page==="Dashboard")
+{
+?>
+<link href="/cadeui/system/css/dashboard.css" type="text/css" rel="stylesheet">
+<?php
+}
+else
+{
+?>
+<link href="/cadeui/system/css/main.css" type="text/css" rel="stylesheet">
+<?php
+}
 ?>
 <link href="/cadeui/system/css/miscellaneous.css" type="text/css" rel="stylesheet">
 </head>
