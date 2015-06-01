@@ -54,6 +54,5 @@ if($page==="Homepage" || $page==="Login")
 <?php
 }
 ?>
-
 <link href="/cadeui/system/css/miscellaneous.css" type="text/css" rel="stylesheet">
 </head>
