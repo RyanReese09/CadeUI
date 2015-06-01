@@ -15,8 +15,7 @@
     <a href="/cadeui/login" class="login user-links" title="Login" role="button" tabindex="3">Login</a>
     <?php
     }
-    ?>
-</div>
+    ?></div>
   <?php
   if($page==="Homepage")
   {
