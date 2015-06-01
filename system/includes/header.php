@@ -47,13 +47,7 @@ else
 <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
 <link href="/cadeui/system/css/resets.css" type="text/css" rel="stylesheet">
 <?php
-if($page==="Homepage" || $page==="Login")
-{
-?>
-<link href="/cadeui/system/css/home.css" type="text/css" rel="stylesheet">
-<?php
-}
-else if($page==="Dashboard")
+if($page==="Dashboard")
 {
 ?>
 <link href="/cadeui/system/css/dashboard.css" type="text/css" rel="stylesheet">
