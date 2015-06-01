@@ -11,12 +11,12 @@
     else
     {
     ?>
-    <a href="/cadeui/register" class="register user-links" title="Register" role="button" tabindex="2">Register</a> |
+<a href="/cadeui/register" class="register user-links" title="Register" role="button" tabindex="2">Register</a> |
     <a href="/cadeui/login" class="login user-links" title="Login" role="button" tabindex="3">Login</a>
     <?php
     }
     ?>
-  </div>
+</div>
   <?php
   if($page==="Homepage")
   {
