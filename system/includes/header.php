@@ -48,7 +48,7 @@ else
 <link href="/cadeui/system/css/resets.css" type="text/css" rel="stylesheet">
 <link href="/cadeui/system/css/miscellaneous.css" type="text/css" rel="stylesheet">
 <?php
-if($page==="Home" || $page==="Login")
+if($page==="Homepage" || $page==="Login")
 {
 ?>
 <link href="/cadeui/system/css/home.css" type="text/css" rel="stylesheet">
