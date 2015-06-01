@@ -4,6 +4,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
 <body>
 <?php
+require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php");
+
 /*
 $subscription=new Subscribers($pdo);
 $unsubscribe=$subscription->unsubscribe($_GET["email"]);
