@@ -24,6 +24,8 @@ else
 */
 ?>
 <?php
+
+require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/footer.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/js-files.php");
 ?>
 </body>
