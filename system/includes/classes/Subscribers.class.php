@@ -58,7 +58,7 @@ class Subscribers
     $countActivatedSubs=$findSub->rowCount();
     if($countActivatedSubs>0)
     {
-      if($subDetails["confirmed"]===1)
+      if($subDetails["confirmed"]==="1")
       {
         return array(false,"alreadyactivated");
       }
