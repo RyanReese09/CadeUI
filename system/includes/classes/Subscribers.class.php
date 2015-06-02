@@ -19,7 +19,7 @@ class Subscribers
       if($findSub->rowCount()===0)
       {
         $authKey=bin2hex(openssl_random_pseudo_bytes(32));
-        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, joinDate, activationKey, confirmed) VALUES (:email, :joinDate, :validToken, 0)");
+        $insertSub=$this->pdo->prepare("INSERT INTO Subscribers (email, joinDate, activationKey, confirmed) VALUES (:email, :joinDate, :validToken, false)");
         $insertSub->execute(array(":email" => $subscriber, ":joinDate" => $dateFormat->returnDateTime("now","Y-m-d H:i:s"), ":validToken" => $authKey));
         
         $welcome=new Email($subscriber,$authKey);
@@ -58,11 +58,11 @@ class Subscribers
     if($findSub->rowCount()>0)
     {
       var_dump($subDetails["confirmed"]);
-      if($subDetails["confirmed"]==="1")/*bug . == fixes but need to fix casting*/
+      if($subDetails["confirmed"]===true)/*bug . == fixes but need to fix casting*/
         return array(false,"alreadyactivated");
       else
       {
-        $activateSub=$this->pdo->prepare("UPDATE Subscribers SET confirmed=1 WHERE activationKey=:activationKey");
+        $activateSub=$this->pdo->prepare("UPDATE Subscribers SET confirmed=true WHERE activationKey=:activationKey");
         $activateSub->execute(array(":activationKey" => $activationKey));
         return array(true,"");
       }
