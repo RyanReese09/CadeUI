@@ -50,7 +50,9 @@ class Subscribers
   }
   public function activate($id)
   {
-    return array(true,"");
+    //return array(true,"");
+    return array(false,"notfound");
+    //return array(false,"alreadyactivated");
   }
 }
 ?>
