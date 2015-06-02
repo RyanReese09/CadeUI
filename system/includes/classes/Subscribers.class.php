@@ -57,6 +57,7 @@ class Subscribers
     
     if($findSub->rowCount()>0)
     {
+      var_dump($subDetails["confirmed"]);
       if($subDetails["confirmed"]==="1")/*bug . == fixes but need to fix casting*/
         return array(false,"alreadyactivated");
       else
