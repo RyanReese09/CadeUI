@@ -4,8 +4,6 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/header.php");
 ?>
 <body>
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php");
-
 if(isset($_SESSION["loggedin"]))
 {
   echo "Hello ".htmlspecialchars($_SESSION["firstname"])." ".htmlspecialchars($_SESSION["lastname"]);
