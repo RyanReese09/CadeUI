@@ -57,10 +57,8 @@ class Subscribers
     
     if($findSub->rowCount()>0)
     {
-      if($subDetails["confirmed"]===1)
-      {
+      if($subDetails["confirmed"]==1)
         return array(false,"alreadyactivated");
-      }
       else
       {
         $activateSub=$this->pdo->prepare("UPDATE Subscribers SET confirmed=1 WHERE activationKey=:activationKey");
