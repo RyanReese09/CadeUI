@@ -55,7 +55,7 @@ class Subscribers
     
     $subDetails=$findSub->fetch(PDO::FETCH_ASSOC);
     
-    $countActivatedSubs=$activateSub->rowCount();
+    $countActivatedSubs=$findSub->rowCount();
     if($countActivatedSubs>0)
     {
       if($subDetails["confirmed"]===1)
