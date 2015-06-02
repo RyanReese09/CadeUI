@@ -39,7 +39,7 @@ class Subscribers
     {
       $deleteSub=$this->pdo->prepare("DELETE FROM Subscribers WHERE email=:email");
       $deleteSub->execute(array(":email" => $subEmail));
-      $countDeletedSubs = $deleteSub->rowCount();
+      $countDeletedSubs=$deleteSub->rowCount();
       if($countDeletedSubs>0)
         return array(true,"");
       else
@@ -48,11 +48,29 @@ class Subscribers
     else
       return array(false,"format");
   }
-  public function activate($id)
+  public function activate($activationKey)
   {
-    //return array(true,"");
-    //return array(false,"notfound");
-    return array(false,"alreadyactivated");
+    $findSub=$this->pdo->prepare("SELECT * FROM Subscribers WHERE activationKey=:activationKey");
+    $findSub->execute(array(":activationKey" => $activationKey));
+    
+    $subDetails=$findSub->fetch(PDO::FETCH_ASSOC);
+    
+    $countActivatedSubs=$activateSub->rowCount();
+    if($countActivatedSubs>0)
+    {
+      if($subDetails["confirmed"]===1)
+      {
+        return array(false,"alreadyactivated");
+      }
+      else
+      {
+        $activateSub=$this->pdo->prepare("UPDATE Subscribers SET confirmed=1 WHERE activationKey=:activationKey");
+        $activateSub->execute(array(":activationKey" => $activationKey));
+        return array(true,"");
+      }
+    }
+    else
+      return array(false,"notfound");
   }
 }
 ?>
