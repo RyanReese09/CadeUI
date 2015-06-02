@@ -57,7 +57,6 @@ class Subscribers
     
     if($findSub->rowCount()>0)
     {
-      var_dump($subDetails["confirmed"]);
       if($subDetails["confirmed"]==="yes")
         return array(false,"alreadyactivated");
       else
