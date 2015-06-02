@@ -48,5 +48,9 @@ class Subscribers
     else
       return array(false,"format");
   }
+  public function activate($id)
+  {
+    return array(true,"");
+  }
 }
 ?>
