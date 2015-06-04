@@ -5,7 +5,7 @@
     if($page!=="Homepage")
     {
     ?>
-    <a href="/cadeui/dashboard" class="user-links" title="New Cade" tabindex="2">New Cade</a>
+    <a href="/cadeui/dashboard" class="user-links" title="New Cade" tabindex="2">+ Cade</a> |
     <?php
     }
     if(isset($_SESSION["loggedin"]))
