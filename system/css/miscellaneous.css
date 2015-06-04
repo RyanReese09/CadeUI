@@ -15,7 +15,7 @@ h1
   text-decoration: none;
   background-color: #FF9A22;
   font-size: 1.7rem;
-  display: inline-block;
+  float:left;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   box-shadow:0px 8px 0px rgba(237, 135, 18, 1), 0px 8px 25px rgba(180,180,180,.7);

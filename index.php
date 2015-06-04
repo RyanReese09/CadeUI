@@ -11,7 +11,6 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php"
     <div class="banner-text">
       <h1 id="whatiscadeui">What is CadeUI?</h1>
       <h2 id="description">CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
-      <a href="/cadeui/dashboard" class="new-cade-button" title="New Cade" role="button" tabindex="10">New Cade</a>
     </div>
     <img src="/cadeui/system/images/code-languages.png" alt="HTML, CSS, and Javascript" width="596" height="350">
   </div>

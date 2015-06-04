@@ -1,6 +1,7 @@
 <header id="top" data-scroll-index="0" role="banner">
   <div class="header-inner clearfix">
     <a href="/cadeui/" class="logo" title="Home" tabindex="1"><img src="/cadeui/system/images/cadeui-logo.png" width="300" height="100" alt="CadeUI"></a>
+    <a href="/cadeui/dashboard" class="new-cade-button" title="New Cade" role="button" tabindex="10">New Cade</a>
     <?php
     if(isset($_SESSION["loggedin"]))
     {
