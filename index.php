@@ -11,7 +11,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php"
     <div class="banner-text">
       <h1 id="whatiscadeui">What is CadeUI?</h1>
       <h2 id="description">CadeUI is a coding "sandbox" which also doubles as a CMS, allowing you to create fully fledged websites</h2>
-      <a href="/cadeui/dashboard" class="new-cade-button" title="New Cade" role="button" tabindex="10">New Cade</a>
+      <a href="/cadeui/dashboard" class="new-cade-button" title="New Cade" role="button" tabindex="12">New Cade</a>
     </div>
     <img src="/cadeui/system/images/code-languages.png" alt="HTML, CSS, and Javascript" width="596" height="350">
   </div>
@@ -52,7 +52,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php"
     <div class="features-columns" aria-labelledby="featuresgalore">
       <img src="/cadeui/system/images/advantage-features.gif" width="125" height="125" alt="Many Features" class="scrollflow -pop -opacity">
       <h2 id="featuresgalore">Features-galore</h2>
-      <p>We are dedicated to providing the best experience for you. Have a feature request? <a href="/cadeui/contact" title="Contact CadeUI" tabindex="11">Let us know!</a></p>
+      <p>We are dedicated to providing the best experience for you. Have a feature request? <a href="/cadeui/contact" title="Contact CadeUI" tabindex="13">Let us know!</a></p>
     </div>
     <div class="features-columns" aria-labelledby="dependability">
       <img src="/cadeui/system/images/advantage-dependable.gif" width="125" height="125" alt="Very Dependable" class="scrollflow -pop -opacity">
@@ -84,7 +84,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php"
   {
   ?>
   <form action="/cadeui/system/includes/process-home.php" method="post" id="subscribers">
-    <label><input type="email" placeholder="E-mail" name="subEmail" id="subEmail" tabindex="12" aria-required="true" aria-describedby="newslettersignup">
+    <label><input type="email" placeholder="E-mail" name="subEmail" id="subEmail" tabindex="14" aria-required="true" aria-describedby="newslettersignup">
     <?php
       if(isset($_GET["error"]) && $_GET["error"]==="format")
         echo "<span class=\"error\">Error: Please enter a valid e-mail address</span>\n";
@@ -92,7 +92,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/cadeui/system/includes/page-header.php"
         echo "<span id=\"attempts-error\" class=\"error\">Error: You are already subscribed</span>\n";
     ?>
     </label>
-    <label><input type="submit" value="Submit" name="subscribe" id="subSubmit" tabindex="13"></label>
+    <label><input type="submit" value="Submit" name="subscribe" id="subSubmit" tabindex="15"></label>
   </form>
   <?php
   }
