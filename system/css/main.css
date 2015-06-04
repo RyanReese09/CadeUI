@@ -216,7 +216,7 @@ header .hamburger+label::after
 .banner-why .banner-text
 {
   display:table-cell;
-  vertical-align:middle;
+  vertical-align:top;
 }
 .banner-why h1
 {
