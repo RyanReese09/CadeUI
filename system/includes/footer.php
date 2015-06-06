@@ -14,7 +14,7 @@
     <section aria-labelledby="support">
       <h1 id="support">Support</h1>
       <ul role="list">
-        <li><a href="/cadeui/documentation" title="CadeUI Dcumentation" tabindex="33">Docs</a></li>
+        <li><a href="/cadeui/documentation/" title="CadeUI Dcumentation" tabindex="33">Docs</a></li>
         <li><a href="/cadeui/contact" title="Contact CadeUI" tabindex="34">Contact</a></li>
         <li><a href="/cadeui/tips" title="Helpful Tips" tabindex="35">Helpful Tips</a></li>
         <li><a href="/cadeui/faq" title="Frequently Asked Questions" tabindex="36">F.A.Q.</a></li>
