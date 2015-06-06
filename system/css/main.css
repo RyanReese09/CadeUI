@@ -221,6 +221,7 @@ header .hamburger+label::after
 .banner-why h1
 {
   font-size:3rem;
+  text-transform:uppercase;
   margin:1rem 0;
   color:#444;
 }
@@ -251,6 +252,7 @@ header .hamburger+label::after
 {
   text-align:center;
   padding:1rem 0;
+  text-transform:uppercase;
 }
 .getting-started h2
 {
@@ -276,6 +278,7 @@ header .hamburger+label::after
 .features-wrapper h1
 {
   padding:1rem 0 0;
+  text-transform:uppercase;
 }
 .features-wrapper h2
 {
@@ -332,6 +335,7 @@ header .hamburger+label::after
 {
   text-align:center;
   display:table-caption;
+  text-transform:uppercase;
   padding:1rem 0;
 }
 .testimonials blockquote
@@ -397,6 +401,7 @@ header .hamburger+label::after
 {
   text-align:center;
   margin-bottom:3rem;
+  text-transform:uppercase;
   opacity:0.8;
 }
 .mailing-list form
