@@ -29,13 +29,13 @@ footer, header, menu, nav, section
 }
 html
 {
-  font-size:16px;/*override 1.1rem*/
+  font-size:100%;/*override 1.1rem*/
 }
 @media only screen and (max-width: 1000px)
 {
   html
   {
-    font-size:14px;
+    font-size:90%;
   }
 }
 body
